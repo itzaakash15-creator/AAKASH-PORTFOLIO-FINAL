@@ -1,0 +1,16 @@
+.loader {
+  position: fixed; inset: 0; z-index: 150; background: var(--bg-2);
+  display: flex; align-items: center; justify-content: center;
+}
+.curve { position: absolute; top: 100%; left: 0; width: 100%; height: 12vh; }
+.word { font-size: clamp(2rem, 5vw, 4rem); font-weight: 500; letter-spacing: -0.03em; overflow: hidden; }
+.word span { display: inline-flex; align-items: center; gap: 0.8rem; }
+.dot { width: 12px; height: 12px; border-radius: 50%; background: var(--accent); display: inline-block; }
+.bar { position: absolute; left: var(--pad); right: var(--pad); bottom: 2rem; height: 1px; background: var(--line); }
+.fill { height: 100%; background: var(--fg); transform-origin: left; }
+.count {
+  position: absolute; right: var(--pad); bottom: 3rem;
+  font-size: clamp(4rem, 14vw, 13rem); font-weight: 600; letter-spacing: -0.06em; line-height: 0.8;
+  font-variant-numeric: tabular-nums;
+}
+.meta { position: absolute; left: var(--pad); bottom: 3.5rem; color: var(--muted); }

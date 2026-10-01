@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AAKASH — Marketer, Brand Builder, Creator, Speaker</title>
+  <meta name="description" content="A marketer, creator, web builder and motivational speaker turning ideas into real opportunities. Explore selected case studies, verified proof of work, and creative direction." />
+  <meta name="keywords" content="AAKASH, Aakash K, Personal Branding, Digital Marketing, Creative Director, Digi Marketrix, U6NICK, Life With Aakash, Mr Aku Vlogs, Speaker, AI and Data Science" />
+  <meta name="author" content="AAKASH (Aakash K)" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AAKASH — Marketer, Brand Builder, Creator, Speaker" />
+  <meta property="og:description" content="I build brands, digital experiences and ideas that move people. Portfolio &amp; case studies of AAKASH." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aakashk.vercel.app/" />
+  <meta property="og:image" content="assets/aakash_authentic_portrait.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/editorial.css" />
+
+  <!-- Animation Engine (GSAP + ScrollTrigger for restrained scroll storytelling) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Three.js & GLTFLoader for Genuine 3D Character Architecture -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+
+  <!-- ========================================================================
+       Navigation Bar (Matches Storytelling Order: WORK, SPEAKING, CREATOR, JOURNEY, PROOF, ABOUT)
+       ======================================================================== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="index.html" class="nav-brand" aria-label="AAKASH Home">
+        <span>AAKASH<span class="brand-period">.</span></span>
+      </a>
+
+      <div class="nav-center-links">
+        <a href="#work" class="nav-link">WORK</a>
+        <a href="#speaking" class="nav-link">SPEAKING</a>
+        <a href="#creator" class="nav-link">CREATOR</a>
+        <a href="#journey" class="nav-link">JOURNEY</a>
+        <a href="#proof" class="nav-link">PROOF</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+      </div>
+
+      <div class="nav-right-action">
+        <a href="#contact" class="nav-connect-btn" aria-label="Connect with Aakash">
+          <span>LET'S CONNECT ↗</span>
+        </a>
+        <button type="button" class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Full-Screen Menu with Large Typography (Same Storytelling Order) -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <div class="mobile-drawer-links">
+        <a href="#work" class="nav-link">WORK</a>
+        <a href="#speaking" class="nav-link">SPEAKING</a>
+        <a href="#creator" class="nav-link">CREATOR</a>
+        <a href="#journey" class="nav-link">JOURNEY</a>
+        <a href="#proof" class="nav-link">PROOF</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+      </div>
+      <div class="mobile-drawer-footer">
+        <a href="#contact" class="nav-connect-btn" style="width: 100%; justify-content: center; padding: 0.85rem;">
+          <span>LET'S CONNECT ↗</span>
+        </a>
+        <a href="resume.html" class="nav-link" style="font-size: 1.15rem; color: var(--accent-gold);">
+          DOWNLOAD RESUME ↗
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======================================================================
+         01 & 02. HERO & SIGNATURE IDENTITY EXPERIENCE WITH CINEMATIC ENTRANCE
+         ====================================================================== -->
+    <div class="hero-signature-wrapper" id="hero-experience">
+      <section class="home-hero-section poster-hero-stage" id="hero">
+
+        <!-- LAYER 1 & 2: Atmospheric Studio Background & Cinematic Lighting -->
+        <div class="hero-lighting-stage" aria-hidden="true">
+          <!-- Primary soft warm backlight behind head & shoulders -->
+          <div class="hero-poster-backlight" id="hero-radial-light"></div>
+          <!-- Subtle directional side illumination -->
+          <div class="hero-poster-side-light"></div>
+          <!-- Soft rim light creating silhouette edge separation -->
+          <div class="hero-poster-rim-light"></div>
+          <!-- Focused Orbit Spotlight for Identity Experience -->
+          <div class="hero-orbit-spotlight" id="orbit-spotlight"></div>
+        </div>
+
+        <!-- LAYER 3: Enormous Background Typography PORTFOLIO (Behind Aakash) -->
+        <div class="hero-poster-wordmark" id="hero-portfolio-wordmark" aria-hidden="true">
+          PORTFOLIO
+        </div>
+
+        <!-- LAYER 3b: ENORMOUS BACKGROUND TYPOGRAPHY: I DON'T FIT INTO ONE BOX (Behind Aakash) -->
+        <div class="hero-statement-backdrop" id="hero-statement-backdrop" aria-hidden="true">
+          <div class="stmt-line stmt-line-1" id="stmt-line-1">
+            <span class="stmt-text">I DON'T FIT</span>
+          </div>
+          <div class="stmt-line stmt-line-2" id="stmt-line-2">
+            <span class="stmt-text">INTO ONE</span>
+          </div>
+          <div class="stmt-line stmt-line-3" id="stmt-line-3">
+            <span class="stmt-text">BOX<span class="stmt-dot">.</span></span>
+          </div>
+        </div>
+
+        <!-- LAYER 3c: ENVIRONMENTAL ROLE SYMBOLS (Subtle Glowing Artwork in Environment) -->
+        <div class="role-environmental-symbols" id="role-env-symbols" aria-hidden="true">
+          <!-- Symbol 01: Strategy Path (Marketer) -->
+          <div class="env-symbol-layer env-symbol-marketer" id="env-sym-marketer">
+            <svg viewBox="0 0 440 260" class="env-symbol-svg" fill="none">
+              <path class="env-path-draw" d="M 30 200 L 130 140 L 220 170 L 330 85 L 400 45" stroke="#d4af37" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="30" cy="200" r="5" fill="#a1a1aa"/>
+              <circle cx="130" cy="140" r="6" fill="#d4af37"/>
+              <circle cx="220" cy="170" r="5" fill="#a1a1aa"/>
+              <circle cx="330" cy="85" r="7" fill="#d4af37"/>
+              <circle cx="400" cy="45" r="8" fill="#ffffff" stroke="#d4af37" stroke-width="3"/>
+              <circle cx="400" cy="45" r="18" stroke="rgba(212,175,55,0.4)" stroke-width="1.5" stroke-dasharray="3 3"/>
+            </svg>
+          </div>
+          <!-- Symbol 02: Fingerprint / Identity Contours (Brand Builder) -->
+          <div class="env-symbol-layer env-symbol-brand" id="env-sym-brand">
+            <svg viewBox="0 0 340 360" class="env-symbol-svg" fill="none">
+              <path class="env-path-draw" d="M 170 265 C 152 230 152 185 170 155 C 182 135 198 145 198 168 C 198 198 186 238 170 265" stroke="#d4af37" stroke-width="2.5" stroke-linecap="round"/>
+              <path class="env-path-draw" d="M 144 288 C 122 240 122 172 152 130 C 178 95 224 105 228 144 C 232 190 210 250 186 298" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"/>
+              <path class="env-path-draw" d="M 118 310 C 92 250 92 155 135 105 C 174 62 252 70 260 122 C 268 186 238 268 202 324" stroke="rgba(212,175,55,0.35)" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="170" cy="155" r="4.5" fill="#d4af37"/>
+            </svg>
+          </div>
+          <!-- Symbol 03: Camera Aperture Viewfinder (Creator) -->
+          <div class="env-symbol-layer env-symbol-creator" id="env-sym-creator">
+            <svg viewBox="0 0 340 340" class="env-symbol-svg" fill="none">
+              <circle cx="170" cy="170" r="140" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+              <circle cx="170" cy="170" r="118" stroke="rgba(212,175,55,0.4)" stroke-width="1.8" stroke-dasharray="4 4"/>
+              <path d="M 50 80 L 50 50 L 80 50" stroke="rgba(212,175,55,0.6)" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M 290 80 L 290 50 L 260 50" stroke="rgba(212,175,55,0.6)" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M 50 260 L 50 290 L 80 290" stroke="rgba(212,175,55,0.6)" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M 290 260 L 290 290 L 260 290" stroke="rgba(212,175,55,0.6)" stroke-width="2.5" stroke-linecap="round"/>
+              <g stroke="rgba(212,175,55,0.5)" stroke-width="2" fill="rgba(255,255,255,0.03)">
+                <path d="M 170 70 C 202 70 238 86 256 112 L 208 134 Z"/>
+                <path d="M 268 112 C 286 142 286 182 268 212 L 226 186 Z"/>
+                <path d="M 268 226 C 250 256 216 272 186 272 L 186 226 Z"/>
+                <path d="M 170 270 C 138 270 102 254 84 228 L 132 206 Z"/>
+                <path d="M 72 228 C 54 198 54 158 72 128 L 114 154 Z"/>
+                <path d="M 72 114 C 90 84 124 68 154 68 L 154 114 Z"/>
+              </g>
+            </svg>
+          </div>
+          <!-- Symbol 04: Soundwave Acoustic Abstraction (Speaker) -->
+          <div class="env-symbol-layer env-symbol-speaker" id="env-sym-speaker">
+            <svg viewBox="0 0 440 200" class="env-symbol-svg" fill="none">
+              <line x1="20" y1="100" x2="420" y2="100" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+              <g stroke="rgba(212,175,55,0.5)" stroke-width="2.5" stroke-linecap="round">
+                <line x1="60" y1="88" x2="60" y2="112"/>
+                <line x1="88" y1="72" x2="88" y2="128"/>
+                <line x1="116" y1="52" x2="116" y2="148"/>
+                <line x1="144" y1="32" x2="144" y2="168"/>
+                <line x1="172" y1="56" x2="172" y2="144"/>
+                <line x1="200" y1="20" x2="200" y2="180" stroke="#ffffff" stroke-width="3"/>
+                <line x1="228" y1="44" x2="228" y2="156"/>
+                <line x1="256" y1="28" x2="256" y2="172"/>
+                <line x1="284" y1="56" x2="284" y2="144"/>
+                <line x1="312" y1="38" x2="312" y2="162"/>
+                <line x1="340" y1="68" x2="340" y2="132"/>
+                <line x1="368" y1="80" x2="368" y2="120"/>
+                <line x1="396" y1="90" x2="396" y2="110"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- LAYER 4, 5 & 6: Poster Grid Composition (Left Flank, Centered Aakash, Right Flank) -->
+        <div class="hero-poster-grid">
+
+          <!-- LEFT FLANK: Identity fragments, Greeting, Statement, and CTAs -->
+          <div class="hero-flank hero-flank-left" id="hero-left-flank">
+            <!-- Upper Left: Identity Tags with Directional Reveal (Left -> Right) -->
+            <div class="hero-tag-cluster hero-tag-left-cluster" id="hero-left-tags">
+              <span class="tag-accent-line tag-accent-line-left" aria-hidden="true"></span>
+              <div class="tag-reveal-wrap tag-reveal-left">
+                <span class="poster-tag tag-item-1">MARKETER.</span>
+                <span class="poster-tag-separator">/</span>
+                <span class="poster-tag tag-item-2">BRAND BUILDER.</span>
+              </div>
+            </div>
+
+            <!-- Main Greeting & AAKASH Name -->
+            <div class="hero-greeting-block" id="hero-greeting">
+              <span class="hero-salutation">Hello, I'm</span>
+              <h1 class="hero-poster-name">AAKASH.</h1>
+            </div>
+
+            <!-- Positioning Statement -->
+            <div class="hero-positioning-block" id="hero-positioning">
+              <p class="hero-poster-statement">
+                I build brands, digital experiences<br />
+                and <span class="hero-serif-accent">ideas that move people.</span>
+              </p>
+              <p class="hero-poster-subtext">
+                Turning ideas into real commercial opportunities through marketing, high-retention media, and scalable web platforms.
+              </p>
+            </div>
+
+            <!-- Action CTAs -->
+            <div class="hero-cta-cluster" id="hero-cta-cluster">
+              <a href="#work" class="btn-editorial">
+                <span>Explore My Work →</span>
+              </a>
+              <a href="#about" class="btn-editorial-outline">
+                <span>About Me →</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- CENTER SUBJECT: AAKASH (Visual Anchor, Large 70–82vh, In Front of PORTFOLIO) -->
+          <div class="hero-center-subject" id="character-scene">
+            <div class="character-scene-stage" id="character-stage">
+              <!-- Contact shadow beneath & behind Aakash for environmental depth integration -->
+              <div class="aakash-contact-shadow" id="aakash-contact-shadow" aria-hidden="true"></div>
+
+              <!-- High-resolution authentic cutout portrait with folded arms -->
+              <img 
+                src="assets/aakash_authentic_portrait.png" 
+                alt="AAKASH — Creative Director, Marketer and Builder" 
+                class="hero-poster-portrait" 
+                id="character-portrait" 
+              />
+              <!-- Genuine WebGL 3D GLB Mount Architecture -->
+              <div class="character-3d-mount" id="character-3d-mount"></div>
+
+
+            </div>
+          </div>
+
+          <!-- RIGHT FLANK: Creator/Speaker Dimensions & Real Professional Anchors -->
+          <div class="hero-flank hero-flank-right" id="hero-right-flank">
+            <!-- Upper Right: Secondary Identity Tags with Directional Reveal (Right -> Left) -->
+            <div class="hero-tag-cluster hero-tag-right-cluster" id="hero-right-tags">
+              <div class="tag-reveal-wrap tag-reveal-right">
+                <span class="poster-tag tag-item-1">CREATOR.</span>
+                <span class="poster-tag-separator">/</span>
+                <span class="poster-tag tag-item-2">SPEAKER.</span>
+              </div>
+              <span class="tag-accent-line tag-accent-line-right" aria-hidden="true"></span>
+            </div>
+
+            <!-- Small Editorial Mission Statement -->
+            <div class="hero-right-mantra" id="hero-right-mantra">
+              <span class="poster-kicker-mono">CORE PHILOSOPHY</span>
+              <h3 class="poster-mantra-title">
+                TURNING IDEAS<br />
+                INTO EXPERIENCES.
+              </h3>
+            </div>
+
+            <!-- Real Professional Anchors (01 DIGI MARKETRIX, 02 PERSONAL BRANDING STRATEGIST, 03 LIFE WITH AAKASH) -->
+            <div class="hero-anchors-stream" id="hero-anchors">
+              <!-- Anchor 01 -->
+              <div class="hero-anchor-item active" data-index="01" data-preview="assets/proofs_optimized/digi_marketrix_office.jpg" data-title="DIGI MARKETRIX" data-sub="Marketing the Digital Presence" data-kicker="SELECTED WORK / 01">
+                <div class="anchor-step-row">
+                  <span class="anchor-index">01</span>
+                  <span class="anchor-line" aria-hidden="true"></span>
+                </div>
+                <div class="anchor-body">
+                  <div class="anchor-title-wrap">
+                    <span class="anchor-title">DIGI MARKETRIX</span>
+                  </div>
+                  <div class="anchor-sub-wrap">
+                    <span class="anchor-sub">Marketing the Digital Presence</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Anchor 02 -->
+              <div class="hero-anchor-item" data-index="02" data-preview="assets/proofs_optimized/purple_collection_bts.jpg" data-title="PERSONAL BRANDING STRATEGIST" data-sub="Brand Building" data-kicker="STRATEGY / 02">
+                <div class="anchor-step-row">
+                  <span class="anchor-index">02</span>
+                  <span class="anchor-line" aria-hidden="true"></span>
+                </div>
+                <div class="anchor-body">
+                  <div class="anchor-title-wrap">
+                    <span class="anchor-title">PERSONAL BRANDING STRATEGIST</span>
+                  </div>
+                  <div class="anchor-sub-wrap">
+                    <span class="anchor-sub">Brand Building</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Anchor 03 -->
+              <div class="hero-anchor-item" data-index="03" data-preview="assets/proofs_optimized/lwa_page.jpg" data-title="LIFE WITH AAKASH" data-sub="Life &amp; Motivational Content" data-kicker="CONTENT &amp; REFLECTION / 03">
+                <div class="anchor-step-row">
+                  <span class="anchor-index">03</span>
+                  <span class="anchor-line" aria-hidden="true"></span>
+                </div>
+                <div class="anchor-body">
+                  <div class="anchor-title-wrap">
+                    <span class="anchor-title">LIFE WITH AAKASH</span>
+                  </div>
+                  <div class="anchor-sub-wrap">
+                    <span class="anchor-sub">Life &amp; Motivational Content</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Atmospheric Large Project Hover Preview (Opposite Side: Left Viewport) -->
+        <div class="hero-hover-preview-stage" id="hero-hover-preview" aria-hidden="true">
+          <div class="hover-preview-inner" id="hover-preview-inner">
+            <div class="hover-preview-media">
+              <img src="assets/proofs_optimized/digi_marketrix_office.jpg" alt="" class="hover-preview-img" id="hover-preview-img" />
+              <div class="hover-preview-overlay"></div>
+            </div>
+            <div class="hover-preview-meta">
+              <span class="hover-preview-kicker" id="hover-preview-kicker">SELECTED WORK / 01</span>
+              <h4 class="hover-preview-title" id="hover-preview-title">DIGI MARKETRIX</h4>
+              <p class="hover-preview-sub" id="hover-preview-sub">Marketing the Digital Presence</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- TOP IDENTITY HISTORY ROW: Reserved slots for stored completed frames (Initially Empty) -->
+        <div class="identity-history-row" id="identity-history-row" aria-hidden="true">
+          <div class="history-grid-container">
+            <div class="history-slot" id="history-slot-1"></div>
+            <div class="history-slot" id="history-slot-2"></div>
+            <div class="history-slot" id="history-slot-3"></div>
+            <div class="history-slot" id="history-slot-4"></div>
+          </div>
+          <!-- Connecting Champagne Line for Completed Collective Identity -->
+          <div class="history-collective-line" id="history-collective-line"></div>
+        </div>
+
+        <!-- THE 4 ACTIVE EDITORIAL ROLE FRAMES (Architectural Panels Rising + Rotating) -->
+        <div class="active-role-stage" id="active-role-stage">
+          <!-- Warm Spotlight Beneath Active Role Frame -->
+          <div class="active-role-spotlight" id="active-role-spotlight" aria-hidden="true"></div>
+
+          <!-- FRAME 01: MARKETER -->
+          <div class="editorial-role-frame role-frame-marketer" id="role-frame-1">
+            <div class="role-frame-inner">
+              <div class="role-frame-header">
+                <span class="role-frame-num">01</span>
+                <span class="role-frame-category">DISCIPLINE // STRATEGY</span>
+              </div>
+              <div class="role-frame-title-wrap">
+                <h3 class="role-frame-title">MARKETER</h3>
+              </div>
+              <div class="role-frame-sub-wrap">
+                <p class="role-frame-sub">STRATEGY &nbsp;•&nbsp; DIGITAL &nbsp;•&nbsp; GROWTH</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FRAME 02: BRAND BUILDER -->
+          <div class="editorial-role-frame role-frame-brand" id="role-frame-2">
+            <div class="role-frame-inner">
+              <div class="role-frame-header">
+                <span class="role-frame-num">02</span>
+                <span class="role-frame-category">DISCIPLINE // IDENTITY</span>
+              </div>
+              <div class="role-frame-title-wrap">
+                <h3 class="role-frame-title">BRAND BUILDER</h3>
+              </div>
+              <div class="role-frame-sub-wrap">
+                <p class="role-frame-sub">POSITIONING &nbsp;•&nbsp; TRUST &nbsp;•&nbsp; IDENTITY</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FRAME 03: CREATOR -->
+          <div class="editorial-role-frame role-frame-creator" id="role-frame-3">
+            <div class="role-frame-inner">
+              <div class="role-frame-header">
+                <span class="role-frame-num">03</span>
+                <span class="role-frame-category">DISCIPLINE // MEDIA</span>
+              </div>
+              <div class="role-frame-title-wrap">
+                <h3 class="role-frame-title">CREATOR</h3>
+              </div>
+              <div class="role-frame-sub-wrap">
+                <p class="role-frame-sub">STORYTELLING &nbsp;•&nbsp; VIDEO &nbsp;•&nbsp; CONTENT</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FRAME 04: SPEAKER -->
+          <div class="editorial-role-frame role-frame-speaker" id="role-frame-4">
+            <div class="role-frame-inner">
+              <div class="role-frame-header">
+                <span class="role-frame-num">04</span>
+                <span class="role-frame-category">DISCIPLINE // VOICE</span>
+              </div>
+              <div class="role-frame-title-wrap">
+                <h3 class="role-frame-title">SPEAKER</h3>
+              </div>
+              <div class="role-frame-sub-wrap">
+                <p class="role-frame-sub">LIFE &nbsp;•&nbsp; MOTIVATION &nbsp;•&nbsp; COMMUNICATION</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Exit Phase 4: Transition into Selected Work (Left Enters, Owns Screen) -->
+        <div class="work-transition-phase" id="work-transition-phase">
+          <div class="work-transition-kicker-mask">
+            <span class="work-transition-label" id="work-kicker">SELECTED WORK / 01</span>
+          </div>
+          <div class="work-title-mask-line">
+            <h2 class="work-title-word" id="work-title-digi">DIGI</h2>
+          </div>
+          <div class="work-title-mask-line">
+            <h2 class="work-title-word" id="work-title-marketrix">MARKETRIX</h2>
+          </div>
+          <div class="work-sub-mask-wrap">
+            <p class="work-transition-subtitle" id="work-subtitle">Digital Marketing &nbsp;·&nbsp; Strategy &nbsp;·&nbsp; Brand Growth</p>
+          </div>
+        </div>
+
+        <!-- Scroll Exit Phase 5: Approach into Project Canvas -->
+        <div class="hero-project-approach-canvas" id="hero-project-approach" aria-hidden="true">
+          <div class="project-approach-frame">
+            <img 
+              src="assets/experience_digi_marketrix.jpg" 
+              alt="Digi Marketrix Commercial Case Study Production" 
+              class="project-approach-img" 
+              id="project-approach-img" 
+            />
+            <div class="project-approach-glow"></div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- ======================================================================
+         01 — PRIMARY CHAPTER: DIGI MARKETRIX (Work Chapter)
+         The strongest professional experience.
+         Hook → Curiosity → One Strong Visual → One Credibility Signal → Explore Deeper
+         ====================================================================== -->
+    <section class="editorial-chapter" id="work" data-alias="experience">
+      <span id="experience" style="position: absolute; top: 0; left: 0; pointer-events: none;" aria-hidden="true"></span>
+      <div class="editorial-bg-glow" aria-hidden="true"></div>
+      
+      <div class="editorial-container">
+        <!-- Hook Viewport -->
+        <div class="editorial-chapter-hook">
+          <span class="hook-kicker">01 // THE PRIMARY FOUNDATION</span>
+          <h2 class="hook-headline">
+            THREE YEARS.<br />
+            <span class="text-gold">ONE PLACE THAT</span><br />
+            CHANGED HOW I WORK.
+          </h2>
+        </div>
+
+        <!-- Identity Title Lockup -->
+        <div class="editorial-title-row">
+          <h3 class="editorial-chapter-title">
+            DIGI<br />MARKETRIX
+          </h3>
+          <p class="editorial-chapter-tagline">MARKETING THE DIGITAL PRESENCE</p>
+        </div>
+
+        <!-- First Viewport Split: One Strong Visual + Narrative & Credibility -->
+        <div class="editorial-viewport-split">
+          <div class="viewport-content-pane">
+            <p class="supporting-narrative">
+              Agency-level execution across 3 years of digital marketing, video production, and commercial brand campaigns. Where creative intuition transformed into systematic, metric-driven client execution.
+            </p>
+            <div class="credibility-signal">
+              <span class="signal-dot"></span>
+              <span class="signal-text">3-YEAR ASSOCIATION · FULL-TIME AGENCY INTERNSHIP</span>
+            </div>
+            <div class="editorial-chapter-actions">
+              <button type="button" class="btn-editorial open-drawer-btn" data-drawer="drawer-digi">EXPLORE CASE STUDY →</button>
+              <button type="button" class="btn-editorial-outline open-proof-trigger" data-proof="digi-cert">VIEW OFFICIAL CERTIFICATE ↗</button>
+            </div>
+          </div>
+
+          <div class="editorial-single-visual-frame open-proof-trigger" data-proof="digi-office" data-cursor="EXPLORE" title="Click to view full-resolution workplace">
+            <img 
+              src="assets/proofs_optimized/digi_marketrix_office.jpg" 
+              alt="Digi Marketrix Agency Studio Workplace and 3D Logo Wall" 
+              loading="lazy" 
+            />
+            <div class="visual-frame-overlay-badge">
+              <span>AGENCY ENVIRONMENT // THOOTHUKUDI STUDIO</span>
+              <span>INSPECT ↗</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Digi Ownership Story Block -->
+        <div class="editorial-ownership-block">
+          <div class="ownership-hook">
+            I DIDN'T JUST<br />
+            <span class="text-muted-strike">WORK THERE.</span><br />
+            <span class="text-gold">I GREW INSIDE IT.</span>
+          </div>
+
+          <!-- Sequential Trio Reveal -->
+          <div class="ownership-trio-sequence">
+            <div class="trio-item">
+              <span class="trio-num">01</span>
+              <h4 class="trio-title">3 YEARS</h4>
+              <p class="trio-desc">
+                Continuous active association inside the agency. Evolving across digital marketing strategy, commercial scriptwriting, and direct business account management.
+              </p>
+            </div>
+
+            <div class="trio-item">
+              <span class="trio-num">02</span>
+              <h4 class="trio-title">INTERNSHIP</h4>
+              <p class="trio-desc">
+                Completed formal full-time agency internship certified by CEO Antony Joyson Fernando. Mastered on-location camera setups, gimbal movement, and Premiere Pro post-production.
+              </p>
+            </div>
+
+            <div class="trio-item trio-highlight">
+              <span class="trio-num">03</span>
+              <h4 class="trio-title">TALENTRIX</h4>
+              <p class="trio-desc">
+                Started and directed the dedicated influencer-marketing arm within the Digi Marketrix ecosystem, connecting regional brands with digital creators.
+              </p>
+            </div>
+          </div>
+
+          <!-- Dedicated Talentrix Sub-Moment -->
+          <div class="talentrix-submoment">
+            <div class="talentrix-submoment-content">
+              <span class="submoment-badge">IN-HOUSE VENTURE // BORN AT DIGI MARKETRIX</span>
+              <h4 class="talentrix-big-name">TALENT<br />RIX<span class="text-gold">.</span></h4>
+              <div class="talentrix-manifesto">STARTED. LED. BUILT.</div>
+              <p class="talentrix-desc">
+                Conceptualized and spearheaded by Aakash to bridge retail clients with high-affinity influencers. Orchestrated talent discovery, commercial negotiations, storyboard direction, and production delivery.
+              </p>
+              <div class="talentrix-actions">
+                <button type="button" class="btn-editorial open-drawer-btn" data-drawer="drawer-digi">EXPLORE CASE STUDY →</button>
+                <button type="button" class="btn-editorial-outline open-proof-trigger" data-proof="digi-gimbal">VIEW FIELD PRODUCTION ↗</button>
+              </div>
+            </div>
+
+            <div class="talentrix-visual-card open-proof-trigger" data-proof="digi-gimbal" data-cursor="INSPECT" title="Click to view 3-axis gimbal production">
+              <img 
+                src="assets/proofs_optimized/digi_marketrix_gimbal_shoot.jpg" 
+                alt="Aakash operating 3-axis motorized gimbal during commercial production" 
+                loading="lazy" 
+              />
+              <div class="visual-card-caption">
+                <span>TALENTRIX FIELD PRODUCTION // GIMBAL SHOOT</span>
+                <span>↗</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         02 — PERSONAL BRANDING STRATEGIST (Creator Chapter)
+         Hook → Curiosity → One Strong Visual → One Credibility Signal → Explore Deeper
+         ====================================================================== -->
+    <section class="editorial-chapter" id="branding" data-alias="creator">
+      <span id="creator" style="position: absolute; top: 0; left: 0; pointer-events: none;" aria-hidden="true"></span>
+      <div class="editorial-bg-glow glow-alt" aria-hidden="true"></div>
+
+      <div class="editorial-container">
+        <!-- Hook Viewport -->
+        <div class="editorial-chapter-hook">
+          <span class="hook-kicker">02 // POSITIONING &amp; NARRATIVE</span>
+          <h2 class="hook-headline">
+            ATTENTION<br />
+            <span class="text-muted-strike">ISN'T THE GOAL.</span><br />
+            <span class="text-gold">TRUST IS.</span>
+          </h2>
+        </div>
+
+        <!-- Identity Title Lockup -->
+        <div class="editorial-title-row">
+          <h3 class="editorial-chapter-title">
+            PERSONAL BRANDING<br />STRATEGIST
+          </h3>
+          <p class="editorial-chapter-tagline">POSITIONING · CONTENT · TRUST · IDENTITY</p>
+        </div>
+
+        <!-- First Viewport Split -->
+        <div class="editorial-viewport-split">
+          <div class="viewport-content-pane">
+            <p class="supporting-narrative">
+              Turning individuals into trusted category authorities. It is not social-media posting—it is narrative architecture, audience alignment, and sustained reputational equity.
+            </p>
+            <div class="credibility-signal">
+              <span class="signal-dot"></span>
+              <span class="signal-text">10K–15K+ ORGANIC RETENTION · NON-PAID CAMPAIGNS</span>
+            </div>
+            <div class="editorial-chapter-actions">
+              <button type="button" class="btn-editorial open-drawer-btn" data-drawer="drawer-branding">EXPLORE STRATEGY →</button>
+              <button type="button" class="btn-editorial-outline open-proof-trigger" data-proof="personal-branding-video">WATCH CLIENT VIDEO REEL ↗</button>
+            </div>
+          </div>
+
+          <div class="editorial-single-visual-frame open-proof-trigger" data-proof="chinnadurai-retention" data-cursor="ANALYZE" title="Click to inspect audience retention analytics">
+            <img 
+              src="assets/proofs_optimized/chinnadurai_retention.jpg" 
+              alt="Chinnadurai Textiles High Audience Retention Graph" 
+              loading="lazy" 
+            />
+            <div class="visual-frame-overlay-badge">
+              <span>EVIDENCE // AUDIENCE RETENTION GRAPH</span>
+              <span>INSPECT ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         03 — WEBSITE BUILDER (Web & Code Chapter)
+         Hook → Curiosity → One Strong Visual → One Credibility Signal → Explore Deeper
+         ====================================================================== -->
+    <section class="editorial-chapter" id="web" data-alias="about">
+      <span id="about" style="position: absolute; top: 0; left: 0; pointer-events: none;" aria-hidden="true"></span>
+      <div class="editorial-bg-glow" aria-hidden="true"></div>
+
+      <div class="editorial-container">
+        <!-- Hook Viewport -->
+        <div class="editorial-chapter-hook">
+          <span class="hook-kicker">03 // FUNCTIONAL CODE &amp; INTERFACES</span>
+          <h2 class="hook-headline">
+            SOME IDEAS<br />
+            NEED MORE THAN CONTENT.<br />
+            <span class="text-gold">THEY NEED SOMETHING<br />PEOPLE CAN USE.</span>
+          </h2>
+        </div>
+
+        <!-- Identity Title Lockup -->
+        <div class="editorial-title-row">
+          <h3 class="editorial-chapter-title">
+            WEBSITE<br />BUILDER
+          </h3>
+          <p class="editorial-chapter-tagline">DESIGN · BUILD · DEPLOY</p>
+        </div>
+
+        <!-- First Viewport Split: Real Jayashakthi Tours & Travels Website -->
+        <div class="editorial-viewport-split">
+          <div class="viewport-content-pane">
+            <p class="supporting-narrative">
+              Converting an idea into an actual working digital experience. Fast, accessible, and conversion-focused web architecture built to power real business revenue.
+            </p>
+            <div class="credibility-signal">
+              <span class="signal-dot"></span>
+              <span class="signal-text">LIVE PRODUCTION DEPLOYMENT · ACTIVE BUSINESS CONVERSIONS</span>
+            </div>
+            <div class="editorial-chapter-actions">
+              <a href="https://jayashakthitoursandtravels.com" target="_blank" rel="noopener noreferrer" class="btn-editorial">VIEW LIVE WEBSITE →</a>
+              <button type="button" class="btn-editorial-outline open-drawer-btn" data-drawer="drawer-web">EXPLORE ARCHITECTURE ↗</button>
+            </div>
+          </div>
+
+          <div class="browser-mockup-frame open-proof-trigger" data-proof="jayashakthi-site" data-cursor="VIEW" title="Click to inspect Jayashakthi Tours & Travels website">
+            <div class="browser-mockup-bar">
+              <div class="browser-dots">
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+              </div>
+              <div class="browser-url-pill">https://jayashakthitoursandtravels.com</div>
+            </div>
+            <div class="browser-mockup-body">
+              <img 
+                src="assets/proofs_optimized/jayashakthi_website.jpg" 
+                alt="Jayashakthi Tours & Travels Official Live Website" 
+                loading="lazy" 
+              />
+            </div>
+            <div class="visual-frame-overlay-badge">
+              <span>JAYASHAKTHI TOURS &amp; TRAVELS // LIVE PRODUCTION PORTAL</span>
+              <span>INSPECT ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         04 — LIFE WITH AAKASH (Speaking & Human Connection Chapter)
+         Hook → Curiosity → One Strong Visual → One Credibility Signal → Explore Deeper
+         ====================================================================== -->
+    <section class="editorial-chapter" id="speaking">
+      <div class="editorial-bg-glow glow-alt" aria-hidden="true"></div>
+
+      <div class="editorial-container">
+        <!-- Hook Viewport -->
+        <div class="editorial-chapter-hook">
+          <span class="hook-kicker">04 // VOICE &amp; HUMAN CONNECTION</span>
+          <h2 class="hook-headline">
+            MARKETING TAUGHT ME<br />
+            <span class="text-muted-strike">HOW TO REACH PEOPLE.</span><br />
+            <span class="text-gold">SPEAKING TAUGHT ME<br />HOW TO CONNECT WITH THEM.</span>
+          </h2>
+        </div>
+
+        <!-- Identity Title Lockup -->
+        <div class="editorial-title-row">
+          <h3 class="editorial-chapter-title">
+            LIFE WITH<br />AAKASH
+          </h3>
+          <p class="editorial-chapter-tagline">LIFE · REFLECTION · MOTIVATION</p>
+        </div>
+
+        <!-- First Viewport Split: Real Vertical Video Content -->
+        <div class="editorial-viewport-split">
+          <div class="viewport-content-pane">
+            <p class="supporting-narrative">
+              Direct, unfiltered spoken-word perspectives on mental discipline, resilience, and personal evolution. Built without artificial hype—pure conviction and relatable human truth.
+            </p>
+            <div class="credibility-signal">
+              <span class="signal-dot"></span>
+              <span class="signal-text">59.1K+ PEAK ORGANIC VIEWERSHIP · ZERO AD SPEND</span>
+            </div>
+            <div class="editorial-chapter-actions">
+              <a href="https://www.instagram.com/life.with_aakash?stkn=MXcwa2ZraGllYXBuOA==" target="_blank" rel="noopener noreferrer" class="btn-editorial">EXPLORE ON INSTAGRAM →</a>
+              <button type="button" class="btn-editorial-outline open-proof-trigger" data-proof="lwa-views">VIEW AUDIENCE METRICS ↗</button>
+            </div>
+          </div>
+
+          <div class="vertical-story-frame open-proof-trigger" data-proof="lwa-profile" data-cursor="WATCH" title="Click to view Life With Aakash platform profile">
+            <img 
+              src="assets/proofs_optimized/lwa_page.jpg" 
+              alt="Life With Aakash Instagram Platform Profile and Video Content" 
+              loading="lazy" 
+            />
+            <div class="visual-frame-overlay-badge">
+              <span>@LIFE.WITH_AAKASH // MOTIVATIONAL VIDEO PLATFORM</span>
+              <span>↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         05 — SUPPORTING CREDIBILITY: TRUST CHAPTER (AWARDS / RECOGNITION)
+         Hook → Reveal only a few strongest items → View All Proof CTA
+         ====================================================================== -->
+    <section class="editorial-chapter" id="proof">
+      <div class="editorial-bg-glow" aria-hidden="true"></div>
+
+      <div class="editorial-container">
+        <!-- Hook Viewport -->
+        <div class="editorial-chapter-hook">
+          <span class="hook-kicker">SUPPORTING CREDIBILITY // VERIFIED EVIDENCE</span>
+          <h2 class="hook-headline">
+            DON'T BELIEVE<br />
+            THE HEADLINES.<br />
+            <span class="text-gold">CHECK THE EVIDENCE.</span>
+          </h2>
+        </div>
+
+        <!-- Identity Title Lockup -->
+        <div class="editorial-title-row">
+          <h3 class="editorial-chapter-title">
+            VERIFIED<br />CREDIBILITY
+          </h3>
+          <p class="editorial-chapter-tagline">AWARDS · STAGE RECOGNITION · OFFICIAL RECORDS</p>
+        </div>
+
+        <!-- Editorial Proof Quad: The 4 Strongest Pillars of Proof -->
+        <div class="editorial-proof-quad">
+          <!-- Item 1: Business Excellence Award -->
+          <div class="proof-quad-item open-proof-trigger" data-proof="award-business-excellence" data-cursor="VERIFY">
+            <div class="quad-item-meta">
+              <span class="quad-category">HONORARY STAGE RECOGNITION</span>
+              <span class="quad-year">STAGE HONORS</span>
+            </div>
+            <h4 class="quad-item-title">TWIN HEART BUSINESS EXCELLENCE AWARD</h4>
+            <p class="quad-item-desc">
+              On-stage trophy presentation and honors for outstanding contributions in digital marketing, commercial brand elevation, and creative direction.
+            </p>
+            <div class="quad-item-footer">
+              <span>VIEW STAGE PROOF</span>
+              <span>↗</span>
+            </div>
+          </div>
+
+          <!-- Item 2: State Level Talent Competition -->
+          <div class="proof-quad-item open-proof-trigger" data-proof="award-talent-competition" data-cursor="VERIFY">
+            <div class="quad-item-meta">
+              <span class="quad-category">STATE HONORS</span>
+              <span class="quad-year">2025</span>
+            </div>
+            <h4 class="quad-item-title">STATE LEVEL TALENT COMPETITION 2025</h4>
+            <p class="quad-item-desc">
+              State-level trophy and ceremony honor recognizing public speaking ability, spoken-word stage delivery, and impactful communication.
+            </p>
+            <div class="quad-item-footer">
+              <span>VIEW AWARD &amp; CEREMONY</span>
+              <span>↗</span>
+            </div>
+          </div>
+
+          <!-- Item 3: Certified Agency Internship -->
+          <div class="proof-quad-item open-proof-trigger" data-proof="digi-cert" data-cursor="VERIFY">
+            <div class="quad-item-meta">
+              <span class="quad-category">OFFICIAL CREDENTIAL</span>
+              <span class="quad-year">DIGI MARKETRIX</span>
+            </div>
+            <h4 class="quad-item-title">CERTIFIED AGENCY INTERNSHIP</h4>
+            <p class="quad-item-desc">
+              Official certificate issued and signed by Antony Joyson Fernando, CEO of Digi Marketrix, verifying full-time production and digital marketing responsibilities.
+            </p>
+            <div class="quad-item-footer">
+              <span>INSPECT CERTIFICATE</span>
+              <span>↗</span>
+            </div>
+          </div>
+
+          <!-- Item 4: Real Retention Analytics Proof -->
+          <div class="proof-quad-item open-proof-trigger" data-proof="chinnadurai-retention" data-cursor="VERIFY">
+            <div class="quad-item-meta">
+              <span class="quad-category">AUDIENCE RETENTION</span>
+              <span class="quad-year">10K–15K+ ORGANIC</span>
+            </div>
+            <h4 class="quad-item-title">VERIFIED CLIENT RETENTION METRICS</h4>
+            <p class="quad-item-desc">
+              Authentic audience watch-time and organic retention analytics for Chinnadurai video campaigns, proving that engagement was earned without paid ad spend.
+            </p>
+            <div class="quad-item-footer">
+              <span>VIEW ANALYTICS GRAPH</span>
+              <span>↗</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Option to Explore Deeper: View All Proof -->
+        <div class="editorial-proof-actions">
+          <button type="button" class="btn-editorial open-drawer-btn" data-drawer="drawer-proof-vault">VIEW ALL PROOF →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         06 — CLIENTS / SELECTED WORK: EDITORIAL INDEX
+         No standard cards. An editorial index with dynamic hover/tap media reveal.
+         ====================================================================== -->
+    <section class="editorial-chapter" id="clients" data-alias="other-work">
+      <span id="other-work" style="position: absolute; top: 0; left: 0; pointer-events: none;" aria-hidden="true"></span>
+      <div class="editorial-bg-glow glow-alt" aria-hidden="true"></div>
+
+      <div class="editorial-container">
+        <!-- Editorial Index Header -->
+        <div class="editorial-index-header">
+          <span class="hook-kicker">SELECTED REPERTORY // 2023 → 2026</span>
+          <h2 class="index-section-title">CLIENTS &amp; PRODUCTION INDEX</h2>
+          <p class="index-section-subtitle">
+            Authentic commercial engagements executed across web engineering, video production, personal branding, and digital campaigns.
+          </p>
+        </div>
+
+        <!-- Editorial Split Layout: Left Index List + Right Dynamic Preview -->
+        <div class="editorial-index-layout">
+          <div class="editorial-index-list" id="editorial-index-list">
+            <!-- Row 1: Jayashakthi -->
+            <div 
+              class="index-row-item active-index open-proof-trigger" 
+              data-proof="jayashakthi-site" 
+              data-cursor="INSPECT"
+              data-preview-img="assets/proofs_optimized/jayashakthi_website.jpg"
+              data-preview-cat="WEBSITE BUILDER // FULL-STACK"
+              data-preview-title="Jayashakthi Tours &amp; Travels"
+              data-preview-scope="Designed, developed, and deployed full responsive commercial website driving regional travel bookings and vehicle inquiries."
+            >
+              <span class="row-index-num">01</span>
+              <span class="row-index-name">JAYASHAKTHI TOURS &amp; TRAVELS</span>
+              <span class="row-index-service">WEBSITE DESIGN &amp; DEPLOYMENT</span>
+              <span class="row-index-arrow">↗</span>
+            </div>
+
+            <!-- Row 2: Salem RR -->
+            <div 
+              class="index-row-item open-proof-trigger" 
+              data-proof="salemrr-bts" 
+              data-cursor="INSPECT"
+              data-preview-img="assets/proofs_optimized/salemrr_shoot_bts.jpg"
+              data-preview-cat="COMMERCIAL VIDEOGRAPHY &amp; POST-PRODUCTION"
+              data-preview-title="Salem RR Hospitality Group"
+              data-preview-scope="On-location commercial shoots, multi-angle camera movement, and fast-paced social reel edits."
+            >
+              <span class="row-index-num">02</span>
+              <span class="row-index-name">SALEM RR</span>
+              <span class="row-index-service">VIDEOGRAPHY / SCRIPTING / EDITING</span>
+              <span class="row-index-arrow">↗</span>
+            </div>
+
+            <!-- Row 3: Chinnadurai MD -->
+            <div 
+              class="index-row-item open-proof-trigger" 
+              data-proof="chinnadurai-retention" 
+              data-cursor="INSPECT"
+              data-preview-img="assets/proofs_optimized/chinnadurai_retention.jpg"
+              data-preview-cat="PERSONAL BRANDING STRATEGY"
+              data-preview-title="Chinnadurai Textiles"
+              data-preview-scope="Executive positioning, commercial hook architecture, and retention analytics reaching 15k+ organic views."
+            >
+              <span class="row-index-num">03</span>
+              <span class="row-index-name">CHINNADURAI MD</span>
+              <span class="row-index-service">PERSONAL BRANDING / SCRIPTING</span>
+              <span class="row-index-arrow">↗</span>
+            </div>
+
+            <!-- Row 4: Purple Collection -->
+            <div 
+              class="index-row-item open-proof-trigger" 
+              data-proof="purple-bts" 
+              data-cursor="INSPECT"
+              data-preview-img="assets/proofs_optimized/purple_collection_bts.jpg"
+              data-preview-cat="RETAIL GROWTH CAMPAIGN"
+              data-preview-title="Purple Collection"
+              data-preview-scope="On-location creative direction resulting in a verified +3000% organic reach surge and heightened retail footfalls."
+            >
+              <span class="row-index-num">04</span>
+              <span class="row-index-name">PURPLE COLLECTION</span>
+              <span class="row-index-service">GROWTH CAMPAIGN / BTS SHOOT</span>
+              <span class="row-index-arrow">↗</span>
+            </div>
+
+            <!-- Row 5: Mr Aku Vlogs -->
+            <div 
+              class="index-row-item open-proof-trigger" 
+              data-proof="mraku-profile" 
+              data-cursor="INSPECT"
+              data-preview-img="assets/proofs_optimized/mr_aku_instagram_page.jpg"
+              data-preview-cat="CREATOR PLATFORM ARCHIVE"
+              data-preview-title="Mr Aku Vlogs"
+              data-preview-scope="5-year video production foundation, street VJ mic hosting, and promotional interviews for Tamil cinema."
+            >
+              <span class="row-index-num">05</span>
+              <span class="row-index-name">MR AKU VLOGS</span>
+              <span class="row-index-service">CREATOR PLATFORM &amp; CINEMA PROMOS</span>
+              <span class="row-index-arrow">↗</span>
+            </div>
+
+            <!-- Row 6: Vedha Rice -->
+            <div 
+              class="index-row-item open-proof-trigger" 
+              data-proof="vedha-rice" 
+              data-cursor="INSPECT"
+              data-preview-img="assets/proofs_optimized/vedha_rice_vj.jpg"
+              data-preview-cat="BRAND PROMOTION // FMCG"
+              data-preview-title="Vedha Rice"
+              data-preview-scope="Commercial on-camera presentation delivering brand value, quality differentiation, and regional connection."
+            >
+              <span class="row-index-num">06</span>
+              <span class="row-index-name">VEDHA RICE</span>
+              <span class="row-index-service">COMMERCIAL VJ / PRODUCT REEL</span>
+              <span class="row-index-arrow">↗</span>
+            </div>
+          </div>
+
+          <!-- Sticky Dynamic Preview Pane -->
+          <div class="index-preview-pane" id="index-preview-pane">
+            <div class="preview-media-box">
+              <img 
+                id="editorial-preview-img" 
+                src="assets/proofs_optimized/jayashakthi_website.jpg" 
+                alt="Selected Project Preview" 
+              />
+            </div>
+            <div class="preview-meta-box">
+              <span class="preview-kicker" id="editorial-preview-cat">WEBSITE BUILDER // FULL-STACK</span>
+              <h4 class="preview-title" id="editorial-preview-title">Jayashakthi Tours &amp; Travels</h4>
+              <p class="preview-scope" id="editorial-preview-scope">
+                Designed, developed, and deployed full responsive commercial website driving regional travel bookings and vehicle inquiries.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         07 — JOURNEY: THE PROGRESSION
+         Hook → 2020 → 2026 Progression: CREATE → EDIT → SHOOT → PROMOTE → MARKET → BUILD → LEAD
+         ====================================================================== -->
+    <section class="editorial-chapter" id="journey">
+      <div class="editorial-bg-glow" aria-hidden="true"></div>
+
+      <div class="editorial-container">
+        <!-- Hook Viewport -->
+        <div class="editorial-chapter-hook">
+          <span class="hook-kicker">EVOLUTIONARY ARC // 2020 → 2026</span>
+          <h2 class="hook-headline">
+            NONE OF THIS<br />
+            STARTED WITH<br />
+            <span class="text-gold">MARKETING.</span>
+          </h2>
+        </div>
+
+        <!-- Identity Title Lockup -->
+        <div class="editorial-title-row">
+          <h3 class="editorial-chapter-title">
+            THE PROGRESSION
+          </h3>
+          <p class="editorial-chapter-tagline">2020 → 2026 // SIX YEARS OF ACTIVE COMPOUNDING</p>
+        </div>
+
+        <!-- Progression Strip Visual -->
+        <div class="progression-strip">
+          <span class="progression-step">CREATE</span>
+          <span class="progression-arrow">→</span>
+          <span class="progression-step">EDIT</span>
+          <span class="progression-arrow">→</span>
+          <span class="progression-step">SHOOT</span>
+          <span class="progression-arrow">→</span>
+          <span class="progression-step">PROMOTE</span>
+          <span class="progression-arrow">→</span>
+          <span class="progression-step">MARKET</span>
+          <span class="progression-arrow">→</span>
+          <span class="progression-step">BUILD</span>
+          <span class="progression-arrow">→</span>
+          <span class="progression-step text-gold">LEAD.</span>
+        </div>
+
+        <!-- Six Milestone Progression Cards -->
+        <div class="editorial-journey-cards-grid">
+          <!-- 2020: CREATE -->
+          <div class="journey-step-card open-proof-trigger" data-proof="mraku-joined" data-cursor="INSPECT">
+            <span class="journey-year-tag">2020 // ORIGIN</span>
+            <h4 class="journey-stage-title">CREATE</h4>
+            <p class="journey-stage-desc">
+              Started during school lockdown. Built the first YouTube channel and launched Mr Aku Vlogs, mastering raw storytelling and initial video recording.
+            </p>
+          </div>
+
+          <!-- 2021–2022: EDIT & SHOOT -->
+          <div class="journey-step-card open-proof-trigger" data-proof="digi-working" data-cursor="INSPECT">
+            <span class="journey-year-tag">2021–2022 // CRAFT</span>
+            <h4 class="journey-stage-title">EDIT &amp; SHOOT</h4>
+            <p class="journey-stage-desc">
+              Transitioned from phone cuts to professional Adobe Premiere Pro timeline editing, audio soundscapes, and hands-on 3-axis camera stabilization.
+            </p>
+          </div>
+
+          <!-- 2023: PROMOTE -->
+          <div class="journey-step-card open-proof-trigger" data-proof="mraku-paranthu" data-cursor="INSPECT">
+            <span class="journey-year-tag">2023 // REACH</span>
+            <h4 class="journey-stage-title">PROMOTE</h4>
+            <p class="journey-stage-desc">
+              Expanded into regional shop promotions, street mic interviews, and promotional media collaborations for Tamil feature films.
+            </p>
+          </div>
+
+          <!-- 2024: MARKET -->
+          <div class="journey-step-card open-proof-trigger" data-proof="digi-office" data-cursor="INSPECT">
+            <span class="journey-year-tag">2024 // AGENCY</span>
+            <h4 class="journey-stage-title">MARKET</h4>
+            <p class="journey-stage-desc">
+              Associated with Digi Marketrix. Immersed in full commercial agency operations, client account strategy, and structured campaigns.
+            </p>
+          </div>
+
+          <!-- 2025: BUILD -->
+          <div class="journey-step-card open-proof-trigger" data-proof="jayashakthi-site" data-cursor="INSPECT">
+            <span class="journey-year-tag">2025 // SOFTWARE</span>
+            <h4 class="journey-stage-title">BUILD</h4>
+            <p class="journey-stage-desc">
+              Authored full-stack production websites including Jayashakthi Tours &amp; Travels, fusing high-performance front-end code with brand direction.
+            </p>
+          </div>
+
+          <!-- 2026: LEAD -->
+          <div class="journey-step-card open-proof-trigger" data-proof="award-business-excellence" data-cursor="INSPECT">
+            <span class="journey-year-tag">2026 // LEADERSHIP</span>
+            <h4 class="journey-stage-title">LEAD</h4>
+            <p class="journey-stage-desc">
+              Spearheading Talentrix, earning stage business awards, and architecting high-retention personal branding frameworks for executives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         08 — FUTURE DIRECTION
+         Hook → Personal Branding Agency (Status) → Broader Marketing Company
+         ====================================================================== -->
+    <section class="editorial-chapter" id="future" data-alias="vision">
+      <span id="vision" style="position: absolute; top: 0; left: 0; pointer-events: none;" aria-hidden="true"></span>
+      <div class="editorial-bg-glow glow-alt" aria-hidden="true"></div>
+
+      <div class="editorial-container">
+        <!-- Hook Viewport -->
+        <div class="editorial-chapter-hook">
+          <span class="hook-kicker">THE ROAD AHEAD // NEXT HORIZONS</span>
+          <h2 class="hook-headline">
+            EVERYTHING<br />
+            I'M LEARNING<br />
+            <span class="text-gold">IS POINTING SOMEWHERE.</span>
+          </h2>
+        </div>
+
+        <!-- Identity Title Lockup -->
+        <div class="editorial-title-row">
+          <h3 class="editorial-chapter-title">
+            FUTURE HORIZONS
+          </h3>
+          <p class="editorial-chapter-tagline">NEAR-TERM ACCELERATION &amp; LONG-TERM VISION</p>
+        </div>
+
+        <!-- Dual Pillar Grid: Clear distinction between ambition and existing work -->
+        <div class="future-dual-grid">
+          <!-- Pillar 1: Near-Term Personal Branding Agency -->
+          <div class="future-pillar-card">
+            <div>
+              <span class="future-horizon-tag">NEAR-TERM MILESTONE // SPECIALIZED PRACTICE</span>
+              <h4 class="future-pillar-title">PERSONAL BRANDING AGENCY</h4>
+              <div class="status-pill-group">
+                <span class="status-pill">RESEARCHING</span>
+                <span class="status-pill">DESIGNING</span>
+                <span class="status-pill">DEVELOPING</span>
+              </div>
+              <p class="future-pillar-desc">
+                A dedicated strategic firm built exclusively to architect personal authority for founders, C-suite executives, and specialized professionals. Providing narrative strategy, content systems, high-trust video assets, and reputation management.
+              </p>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Long-Term Broader Marketing Company -->
+          <div class="future-pillar-card">
+            <div>
+              <span class="future-horizon-tag">LONG-TERM HORIZON // FULL-SPECTRUM ENTERPRISE</span>
+              <h4 class="future-pillar-title">BROADER MARKETING COMPANY</h4>
+              <div class="status-pill-group">
+                <span class="status-pill">VISION &amp; ARCHITECTURE</span>
+              </div>
+              <p class="future-pillar-desc">
+                An integrated, full-spectrum marketing enterprise uniting creative brand storytelling, video cinematography, software development, and performance media under a single institutional roof.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         09 — INITIATE COLLABORATION (CONTACT) & FOOTER
+         Direct, zero-friction communication channels
+         ====================================================================== -->
+    <section class="editorial-contact-section" id="contact">
+      <div class="editorial-container">
+        <div class="contact-hero-lockup">
+          <span class="hook-kicker">INITIATE COLLABORATION</span>
+          <h2 class="contact-main-headline">
+            READY TO BUILD<br />
+            SOMETHING EXTRAORDINARY?
+          </h2>
+          <p class="contact-subtitle">
+            Direct, zero-friction connection. Whether you represent an agency, a growing brand, or need high-trust strategic positioning.
+          </p>
+        </div>
+
+        <!-- Direct Zero-Friction Channels -->
+        <div class="contact-direct-channels">
+          <!-- Email Card -->
+          <div class="contact-channel-card copy-email-btn" role="button" tabindex="0" title="Click to copy email address">
+            <span class="channel-tag">DIRECT EMAIL // 1-CLICK COPY</span>
+            <div class="channel-value">itzaakash15@gmail.com</div>
+            <div class="channel-action-hint">
+              <span>CLICK TO COPY ADDRESS</span>
+              <span>↗</span>
+            </div>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="contact-channel-card copy-phone-btn" role="button" tabindex="0" title="Click to copy phone number">
+            <span class="channel-tag">DIRECT TELEPHONE // 1-CLICK COPY</span>
+            <div class="channel-value">+91 85906 37715</div>
+            <div class="channel-action-hint">
+              <span>CLICK TO COPY NUMBER</span>
+              <span>↗</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Secondary Social Links -->
+        <div class="contact-secondary-links">
+          <a href="https://www.linkedin.com/in/aakashk15/" target="_blank" rel="noopener noreferrer" class="btn-editorial-outline">
+            LINKEDIN ↗
+          </a>
+          <a href="https://www.instagram.com/itzaakash_15?igsh=MWF5ODJ2dWR3ZzVpdA==" target="_blank" rel="noopener noreferrer" class="btn-editorial-outline">
+            INSTAGRAM ↗
+          </a>
+          <a href="resume.html" class="btn-editorial">
+            DOWNLOAD RESUME ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Footer Bar -->
+    <footer class="editorial-footer-bar">
+      <div class="editorial-container">
+        <div class="footer-content-row">
+          <div>AAKASH K — © <span id="current-year">2026</span>. ALL RIGHTS RESERVED.</div>
+          <div class="footer-quote">“Nothing changes if nothing changes.”</div>
+          <div><a href="#hero" style="color: rgba(255, 255, 255, 0.6); text-decoration: none;">BACK TO TOP ↑</a></div>
+        </div>
+      </div>
+    </footer>
+
+  <!-- ========================================================================
+       DEEP DIVE MODAL DRAWERS (Full Case Study Depth On-Demand)
+       ======================================================================== -->
+  
+  <!-- Drawer 01: Digi Marketrix & Talentrix Full Case Study -->
+  <div class="editorial-drawer-overlay" id="drawer-digi" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="editorial-drawer-backdrop" data-close-drawer></div>
+    <div class="editorial-drawer-panel">
+      <div class="editorial-drawer-header">
+        <div class="drawer-header-meta">
+          <span class="drawer-tag">CASE STUDY // 01</span>
+          <h3 class="drawer-title">DIGI MARKETRIX &amp; TALENTRIX</h3>
+        </div>
+        <button type="button" class="drawer-close-btn" data-close-drawer aria-label="Close drawer">✕</button>
+      </div>
+      <div class="editorial-drawer-body">
+        <div class="drawer-article-section">
+          <h4 class="drawer-section-title">OVERVIEW &amp; THREE-YEAR IMMERSION</h4>
+          <p class="drawer-prose">
+            Digi Marketrix served as the foundational launchpad for Aakash's commercial marketing capabilities. Over approximately three years of continuous association and a formal full-time agency internship certified by CEO Antony Joyson Fernando, Aakash worked at the front lines of digital marketing strategy, field videography, and commercial client retention.
+          </p>
+          <div class="drawer-stats-row">
+            <div class="drawer-stat-box">
+              <span class="drawer-stat-number">3+</span>
+              <span class="drawer-stat-label">Years Association</span>
+            </div>
+            <div class="drawer-stat-box">
+              <span class="drawer-stat-number">100%</span>
+              <span class="drawer-stat-label">Agency Certified</span>
+            </div>
+            <div class="drawer-stat-box">
+              <span class="drawer-stat-number">Talentrix</span>
+              <span class="drawer-stat-label">In-House Arm Founded</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="drawer-article-section">
+          <h4 class="drawer-section-title">THE BIRTH OF TALENTRIX</h4>
+          <p class="drawer-prose">
+            Recognizing that regional brands needed authentic human voices rather than static billboard advertising, Aakash conceptualized, founded, and directed <strong>Talentrix</strong> as an internal venture within Digi Marketrix. He managed the creator pipeline from discovery to contract negotiation, storyboard scripting, and multi-platform distribution.
+          </p>
+        </div>
+
+        <div class="drawer-article-section">
+          <h4 class="drawer-section-title">VERIFIED VISUAL ASSETS</h4>
+          <div class="drawer-media-grid">
+            <div class="drawer-media-thumb open-proof-trigger" data-proof="digi-cert" data-cursor="INSPECT">
+              <img src="assets/proofs_optimized/digi_marketrix_certificate.jpg" alt="Official Digi Marketrix Certificate" />
+            </div>
+            <div class="drawer-media-thumb open-proof-trigger" data-proof="digi-office" data-cursor="INSPECT">
+              <img src="assets/proofs_optimized/digi_marketrix_office.jpg" alt="Digi Marketrix Agency Office" />
+            </div>
+            <div class="drawer-media-thumb open-proof-trigger" data-proof="digi-gimbal" data-cursor="INSPECT">
+              <img src="assets/proofs_optimized/digi_marketrix_gimbal_shoot.jpg" alt="Gimbal Field Production" />
+            </div>
+            <div class="drawer-media-thumb open-proof-trigger" data-proof="digi-working" data-cursor="INSPECT">
+              <img src="assets/proofs_optimized/digi_marketrix_working.jpg" alt="Premiere Pro Video Editing" />
+            </div>
+          </div>
+        </div>
+
+        <div class="drawer-article-section">
+          <button type="button" class="btn-editorial open-proof-trigger" data-proof="digi-video-shooting">WATCH FULL PRODUCTION REEL ↗</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Drawer 02: Personal Branding Strategist Deep Dive -->
+  <div class="editorial-drawer-overlay" id="drawer-branding" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="editorial-drawer-backdrop" data-close-drawer></div>
+    <div class="editorial-drawer-panel">
+      <div class="editorial-drawer-header">
+        <div class="drawer-header-meta">
+          <span class="drawer-tag">STRATEGY DOSSIER // 02</span>
+          <h3 class="drawer-title">PERSONAL BRANDING STRATEGY</h3>
+        </div>
+        <button type="button" class="drawer-close-btn" data-close-drawer aria-label="Close drawer">✕</button>
+      </div>
+      <div class="editorial-drawer-body">
+        <div class="drawer-article-section">
+          <h4 class="drawer-section-title">POSITIONING VS. SOCIAL MEDIA POSTING</h4>
+          <p class="drawer-prose">
+            Most individuals treat personal branding as social media posting. Aakash approaches it as category positioning. By dissecting an individual's unique domain expertise, defining polarizing viewpoints, and packaging insights into high-retention video formats, Aakash builds reputational equity that drives enterprise deals and speaking opportunities.
+          </p>
+        </div>
+
+        <div class="drawer-article-section">
+          <h4 class="drawer-section-title">CHINNADURAI TEXTILES CASE STUDY</h4>
+          <p class="drawer-prose">
+            For Chinnadurai Textiles, Aakash crafted the full narrative script and camera delivery framework. The result was sustained 10K–15K+ non-paid organic views with retention curves that held viewers all the way through the closing call to action.
+          </p>
+          <div class="drawer-media-grid">
+            <div class="drawer-media-thumb open-proof-trigger" data-proof="chinnadurai-retention" data-cursor="INSPECT">
+              <img src="assets/proofs_optimized/chinnadurai_retention.jpg" alt="Audience Retention Metrics" />
+            </div>
+            <div class="drawer-media-thumb open-proof-trigger" data-proof="chinnadurai-scripting" data-cursor="INSPECT">
+              <img src="assets/proofs_optimized/chinnadurai_scripting.jpg" alt="Scripting Notes" />
+            </div>
+          </div>
+        </div>
+
+        <div class="drawer-article-section">
+          <button type="button" class="btn-editorial open-proof-trigger" data-proof="personal-branding-video">WATCH CLIENT VIDEO REEL ↗</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Drawer 03: Website Builder & Jayashakthi Deep Dive -->
+  <div class="editorial-drawer-overlay" id="drawer-web" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="editorial-drawer-backdrop" data-close-drawer></div>
+    <div class="editorial-drawer-panel">
+      <div class="editorial-drawer-header">
+        <div class="drawer-header-meta">
+          <span class="drawer-tag">DIGITAL ARCHITECTURE // 03</span>
+          <h3 class="drawer-title">WEBSITE BUILDER — JAYASHAKTHI</h3>
+        </div>
+        <button type="button" class="drawer-close-btn" data-close-drawer aria-label="Close drawer">✕</button>
+      </div>
+      <div class="editorial-drawer-body">
+        <div class="drawer-article-section">
+          <h4 class="drawer-section-title">FROM CONCEPT TO WORKING SOFTWARE</h4>
+          <p class="drawer-prose">
+            Aakash bridges design and functional code. When Jayashakthi Tours &amp; Travels required a digital transformation, Aakash built their live web platform from scratch, architecting an intuitive booking workflow, clean typography, mobile responsiveness, and zero layout shift.
+          </p>
+          <div class="drawer-media-thumb open-proof-trigger" data-proof="jayashakthi-site" style="margin-block: 1.5rem;" data-cursor="INSPECT">
+            <img src="assets/proofs_optimized/jayashakthi_website.jpg" alt="Jayashakthi Live Site Mockup" />
+          </div>
+        </div>
+
+        <div class="drawer-article-section">
+          <a href="https://jayashakthitoursandtravels.com" target="_blank" rel="noopener noreferrer" class="btn-editorial">OPEN LIVE WEBSITE →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Drawer 04: Complete Proof Vault -->
+  <div class="editorial-drawer-overlay" id="drawer-proof-vault" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="editorial-drawer-backdrop" data-close-drawer></div>
+    <div class="editorial-drawer-panel">
+      <div class="editorial-drawer-header">
+        <div class="drawer-header-meta">
+          <span class="drawer-tag">VERIFIED ARCHIVE // FULL VAULT</span>
+          <h3 class="drawer-title">CREDENTIALS &amp; EVIDENCE VAULT</h3>
+        </div>
+        <button type="button" class="drawer-close-btn" data-close-drawer aria-label="Close drawer">✕</button>
+      </div>
+      <div class="editorial-drawer-body">
+        <div class="drawer-article-section">
+          <h4 class="drawer-section-title">OFFICIAL AWARDS &amp; STAGE HONORS</h4>
+          <div class="drawer-media-grid">
+            <div class="drawer-media-thumb open-proof-trigger" data-proof="award-business-excellence" data-cursor="INSPECT">
+              <img src="assets/proofs_optimized/award_1_business_excellence.jpg" alt="Business Excellence Award" />
+            </div>
+            <div class="drawer-media-thumb open-proof-trigger" data-proof="award-talent-competition" data-cursor="INSPECT">
+              <img src="assets/proofs_optimized/award_2_talent_competition.jpg" alt="Talent Competition Award" />
+            </div>
+          </div>
+        </div>
+
+        <div class="drawer-article-section">
+          <h4 class="drawer-section-title">AGENCY &amp; CLIENT CREDENTIALS</h4>
+          <div class="drawer-media-grid">
+            <div class="drawer-media-thumb open-proof-trigger" data-proof="digi-cert" data-cursor="INSPECT">
+              <img src="assets/proofs_optimized/digi_marketrix_certificate.jpg" alt="Digi Marketrix Certificate" />
+            </div>
+            <div class="drawer-media-thumb open-proof-trigger" data-proof="chinnadurai-retention" data-cursor="INSPECT">
+              <img src="assets/proofs_optimized/chinnadurai_retention.jpg" alt="Chinnadurai Retention" />
+            </div>
+            <div class="drawer-media-thumb open-proof-trigger" data-proof="purple-bts" data-cursor="INSPECT">
+              <img src="assets/proofs_optimized/purple_collection_bts.jpg" alt="Purple Collection BTS" />
+            </div>
+            <div class="drawer-media-thumb open-proof-trigger" data-proof="lwa-views" data-cursor="INSPECT">
+              <img src="assets/proofs_optimized/lwa_organic_views.jpg" alt="LWA Organic Reach" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Interactive Proof Modal Lightbox (ProofViewer / MediaViewer)
+       ======================================================================== -->
+  <div class="proof-modal-overlay" id="proof-modal" role="dialog" aria-modal="true" aria-labelledby="proof-modal-title">
+    <div class="proof-modal-backdrop" id="proof-modal-backdrop"></div>
+    <div class="proof-modal-dialog">
+      <div class="proof-modal-header">
+        <div class="proof-modal-header-left">
+          <span class="proof-modal-badge" id="proof-modal-badge">CREDENTIAL</span>
+          <span class="proof-modal-counter" id="proof-modal-counter">01 / 28</span>
+        </div>
+        <div class="proof-modal-header-right">
+          <span class="proof-modal-kbd-hint">ESC TO CLOSE · ← → NAVIGATE</span>
+          <button type="button" class="proof-modal-close-btn" id="proof-modal-close" aria-label="Close modal">✕</button>
+        </div>
+      </div>
+
+      <div class="proof-modal-stage">
+        <button type="button" class="proof-nav-btn proof-nav-prev" id="proof-modal-prev" aria-label="Previous proof item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+
+        <div class="proof-modal-media-wrapper" id="proof-modal-media">
+          <!-- Dynamically populated via JS: <img> or <video> -->
+        </div>
+
+        <button type="button" class="proof-nav-btn proof-nav-next" id="proof-modal-next" aria-label="Next proof item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+
+      <div class="proof-modal-footer">
+        <div class="proof-modal-info">
+          <div class="proof-modal-meta-row" id="proof-modal-meta-row">
+            <span id="proof-modal-meta-category">CREDENTIAL</span>
+            <span id="proof-modal-meta-period">2026</span>
+          </div>
+          <h3 class="proof-modal-title" id="proof-modal-title">Verified Evidence</h3>
+          <p class="proof-modal-desc" id="proof-modal-desc">Authentic factual verification.</p>
+        </div>
+        <div class="proof-modal-actions" id="proof-modal-actions">
+          <!-- Dynamically populated link: VIEW ORIGINAL ↗ -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-msg" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-line" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Subtle Contextual Cursor Badge (Only over interactive media) -->
+  <div class="cursor-context-badge" id="cursor-badge" aria-hidden="true">
+    <span class="cursor-badge-text" id="cursor-badge-text">VIEW</span>
+    <span class="cursor-badge-arrow">↗</span>
+  </div>
+
+  <!-- Atmospheric Texture Overlay -->
+  <div class="atmospheric-noise" aria-hidden="true"></div>
+
+  <!-- Scripts -->
+  <script src="js/character-scene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

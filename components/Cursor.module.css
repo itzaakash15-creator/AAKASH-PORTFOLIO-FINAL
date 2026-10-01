@@ -1,0 +1,11 @@
+.cursor { position: fixed; top: 0; left: 0; z-index: 200; pointer-events: none; }
+.disc {
+  position: absolute; border-radius: 50%;
+  background: var(--fg); mix-blend-mode: difference;
+  display: grid; place-items: center;
+}
+.solid { background: var(--accent); mix-blend-mode: normal; }
+.label {
+  font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--accent-ink); font-weight: 600;
+}

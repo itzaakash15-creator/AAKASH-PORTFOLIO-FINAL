@@ -1,0 +1,21 @@
+.list { position: relative; list-style: none; margin-top: 6rem; display: grid; gap: 5rem; }
+.list::before, .line { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: var(--line); }
+.line { background: var(--accent); transform-origin: top; }
+.item { position: relative; width: 50%; padding: 0 3.5rem; display: grid; gap: 0.75rem; justify-items: start; }
+.item:nth-child(odd) { margin-left: 50%; }
+.item:nth-child(even) { text-align: right; justify-items: end; }
+.item h3 { font-size: clamp(2.2rem, 4.5vw, 4.5rem); font-weight: 700; letter-spacing: -0.05em; line-height: 0.95; }
+.item p { max-width: 30rem; }
+.node {
+  position: absolute; top: 0.3rem; width: 13px; height: 13px; border-radius: 50%;
+  background: var(--bg); border: 2px solid var(--accent);
+}
+.item:nth-child(odd) .node { left: -6.5px; }
+.item:nth-child(even) .node { right: -6.5px; }
+.link { border-bottom: 1px solid var(--line); padding-bottom: 0.2rem; }
+.link:hover { color: var(--accent); }
+@media (max-width: 760px) {
+  .list::before, .line { left: 6px; }
+  .item, .item:nth-child(odd) { width: 100%; margin-left: 0; padding: 0 0 0 2.25rem; text-align: left; justify-items: start; }
+  .item:nth-child(even) .node, .item:nth-child(odd) .node { left: 0; right: auto; }
+}

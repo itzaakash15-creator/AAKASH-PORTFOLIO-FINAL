@@ -1,0 +1,194 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5.5rem var(--pad) 1.5rem;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+/* Central stage hosting the layered composition */
+.stage {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: min(74vh, 760px);
+  max-height: calc(100svh - 8.5rem);
+}
+
+/* Layer 1: Giant name behind portrait, anchored at shoulder level */
+.nameBackdrop {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(88vw, 1440px);
+  z-index: 1;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: clamp(3.4rem, 16.8vw, 15.5rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 0.82;
+  text-transform: uppercase;
+  color: var(--fg);
+  user-select: none;
+}
+
+.letterMask {
+  display: inline-flex;
+  overflow: hidden;
+  line-height: 0.86;
+  padding-bottom: 0.06em;
+  margin-bottom: -0.06em;
+}
+
+.letter {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+/* Layer 2: Portrait cutout sitting directly against page background */
+.portraitWrapper {
+  position: relative;
+  height: min(74vh, 760px);
+  max-height: calc(100svh - 8.5rem);
+  aspect-ratio: 682 / 1024;
+  width: auto;
+  max-width: 90vw;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* Subtle fade at the bottom blending smoothly into the dark page background */
+  mask-image: linear-gradient(to bottom, #000 0%, #000 68%, rgba(0, 0, 0, 0.4) 86%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 68%, rgba(0, 0, 0, 0.4) 86%, transparent 100%);
+  will-change: transform, opacity;
+}
+
+.portraitImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top center;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Layer 3: Supporting text in front of portrait, positioned over lower torso */
+.supportingText {
+  position: absolute;
+  bottom: clamp(0.75rem, 2.5vh, 2rem);
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(92vw, 36rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.65rem;
+  z-index: 3;
+  pointer-events: auto;
+}
+
+.role {
+  color: var(--fg);
+  font-size: clamp(0.68rem, 0.85vw, 0.8rem);
+  letter-spacing: 0.1em;
+  opacity: 0.9;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.85), 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.tagline {
+  font-size: clamp(1.02rem, 1.65vw, 1.3rem);
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  color: var(--fg);
+  max-width: 32rem;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.9), 0 1px 4px rgba(0, 0, 0, 0.95);
+}
+
+.rotator {
+  display: inline-grid;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.rotator span {
+  display: inline-block;
+  font-size: 1.1em;
+}
+
+/* Layer 4: Bottom information */
+.foot {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    padding: 5rem var(--pad) 1.25rem;
+  }
+
+  .stage {
+    min-height: min(65vh, 540px);
+    max-height: calc(100svh - 7.5rem);
+  }
+
+  .portraitWrapper {
+    height: min(65vh, 540px);
+    max-width: 90vw;
+    mask-image: linear-gradient(to bottom, #000 0%, #000 66%, rgba(0, 0, 0, 0.35) 86%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 66%, rgba(0, 0, 0, 0.35) 86%, transparent 100%);
+  }
+
+  .nameBackdrop {
+    top: 54%;
+    width: 88vw;
+  }
+
+  .name {
+    font-size: clamp(3.2rem, 18vw, 5.2rem);
+    letter-spacing: -0.04em;
+  }
+
+  .supportingText {
+    bottom: 0.65rem;
+    width: 92vw;
+    gap: 0.45rem;
+  }
+
+  .tagline {
+    font-size: clamp(0.92rem, 3.8vw, 1.12rem);
+    max-width: 22rem;
+  }
+
+  .foot span:nth-child(2) {
+    display: none;
+  }
+}

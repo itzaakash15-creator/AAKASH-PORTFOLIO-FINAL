@@ -1,0 +1,6 @@
+.wrap { overflow: hidden; padding: 2.5rem 0; border-block: 1px solid var(--line); }
+.track {
+  display: flex; white-space: nowrap; gap: 3rem; align-items: center;
+  font-size: clamp(3rem, 8vw, 7.5rem); font-weight: 600; letter-spacing: -0.04em; line-height: 1;
+}
+.star { color: var(--accent); font-size: 0.5em; }

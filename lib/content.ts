@@ -44,9 +44,19 @@ export const getProof = (key: string): Proof | null => {
   };
 };
 
-export const proofs: Proof[] = Object.keys(proofData)
-  .map(getProof)
-  .filter((p): p is Proof => !!p && !!(p.image || p.poster));
+export const proofs: Proof[] = (() => {
+  const seen = new Set<string>();
+  const result: Proof[] = [];
+  for (const key of Object.keys(proofData)) {
+    const p = getProof(key);
+    if (!p) continue;
+    const media = p.image || p.poster;
+    if (!media || seen.has(media)) continue;
+    seen.add(media);
+    result.push(p);
+  }
+  return result;
+})();
 
 export type ProofGroup = {
   id: string;

@@ -70,12 +70,12 @@ export const proofData: Record<string, ProofItem> = {
       linkUrl: 'https://www.linkedin.com/company/digimarketrix/'
     },
     'salemrr-bts': {
-      title: 'Salem RR Biriyani — Commercial Shoot Production',
+      title: 'Salem RR Biriyani — Commercial On-Camera VJ Campaign',
       category: 'CLIENT CAMPAIGN',
-      period: 'Thoothukudi // Food & Hospitality',
+      period: 'Thoothukudi // Food & Hospitality VJ',
       type: 'image',
-      image: 'assets/proofs_optimized/salemrr_shoot_bts.jpg',
-      desc: 'Behind-the-scenes photography during the commercial video shoot for Salem RR Biriyani. Handled on-camera VJ presentation, culinary lighting, and close-up food videography.',
+      image: 'assets/proofs_optimized/salemrr_reel_2849.jpg',
+      desc: 'On-camera commercial video presentation and brand promotion for Salem RR Biriyani, mastering energetic food presentation, regional dialect connection, and engaging viewer hooks.',
       linkText: 'Watch Reel on Instagram ↗',
       linkUrl: 'https://www.instagram.com/reel/DahRlLUSNZ0/'
     },
@@ -120,17 +120,6 @@ export const proofData: Record<string, ProofItem> = {
       linkText: 'Visit Client Instagram ↗',
       linkUrl: 'https://www.instagram.com/mr._aku_vlogs/'
     },
-    'personal-branding-video': {
-      title: 'Personal Branding Client Video — 100% Executed by Aakash',
-      category: 'COMMERCIAL VIDEO REEL',
-      period: 'Direction, Filming & Editing by Aakash',
-      type: 'video',
-      video: 'assets/proofs_optimized/personal_branding_video.mp4',
-      poster: 'assets/proofs_optimized/poster_personal_branding_video.jpg',
-      desc: 'Complete commercial video planned, scripted, shot, and edited by Aakash. Incorporates high-retention hook architecture, sound design, and narrative pacing.',
-      linkText: 'Explore Selected Work ↗',
-      linkUrl: '#clients'
-    },
     'purple-growth': {
       title: 'Purple Collection — Verified +3,000 Reach Growth',
       category: 'ANALYTICS & RESULTS',
@@ -148,16 +137,6 @@ export const proofData: Record<string, ProofItem> = {
       type: 'image',
       image: 'assets/proofs_optimized/jayashakthi_website.jpg',
       desc: 'Production commercial web portal built for Jayashakthi Tours & Travels, featuring responsive fleet showcase, inquiry workflows, and administrative management.',
-      linkText: 'Visit Live Website ↗',
-      linkUrl: 'https://www.jayashakthitoursandtravels.com/'
-    },
-    'tech-jayashakthi': {
-      title: 'Jayashakthi Tours & Travels — Full-Stack Deployment',
-      category: 'WEB ENGINEERING',
-      period: 'Deployed Commercial Platform',
-      type: 'image',
-      image: 'assets/proofs_optimized/jayashakthi_website.jpg',
-      desc: 'Complete commercial website deployed for regional tour operator, engineered with lightweight vanilla stack, fast page load speeds, and intuitive booking inquiries.',
       linkText: 'Visit Live Website ↗',
       linkUrl: 'https://www.jayashakthitoursandtravels.com/'
     },

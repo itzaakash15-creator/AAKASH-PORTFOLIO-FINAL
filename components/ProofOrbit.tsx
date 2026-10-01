@@ -2,11 +2,49 @@
 
 import { motion, useMotionValue, useScroll, useSpring, useTransform, useVelocity } from 'framer-motion';
 import { useRef } from 'react';
-import { proofs } from '../lib/content';
+import { getProof, proofs, type Proof } from '../lib/content';
 import { useOpenProof } from './ProofContext';
 import styles from './ProofOrbit.module.css';
 
-const ITEMS = proofs.filter((p) => p.image).slice(0, 14);
+// 14 distinct, diverse moments: guaranteed 100% unique images and interleaved categories
+const ORBIT_KEYS = [
+  'digi-office',              // Agency: Studio Logo Wall
+  'salemrr-food',             // Client: Salem RR Biriyani Food Reel
+  'award-business-excellence', // Recognition: Twin Heart Business Award
+  'jayashakthi-site',         // Client: Jayashakthi Tours Web Engineering
+  'mraku-roshan',             // Cinema: Music Album with Actor Roshan
+  'purple-bts',               // Client: Purple Collection Personal Branding
+  'digi-working',             // Agency: Premiere Pro Timeline Workflow
+  'vedha-rice',               // Client: Vedha Rice Commercial VJ
+  'lwa-views',                // Creator: Life With Aakash 59K Viral Insights
+  'chinnadurai-scripting',    // Client: Chinnadurai Textiles Campaign Script
+  'award-talent-competition', // Recognition: State Level Talent Award
+  'digi-gimbal',              // Agency: On-Location Gimbal Field Production
+  'mraku-tourist',            // Cinema: Movie Tourist Family Promotional Shoot
+  'tech-mineguardian',        // Tech: MineGuardian Autonomous Rover
+];
+
+const ITEMS: Proof[] = (() => {
+  const seenImages = new Set<string>();
+  const list: Proof[] = [];
+  for (const k of ORBIT_KEYS) {
+    const p = getProof(k);
+    if (p && p.image && !seenImages.has(p.image)) {
+      seenImages.add(p.image);
+      list.push(p);
+    }
+  }
+  if (list.length < 14) {
+    for (const p of proofs) {
+      if (p.image && !seenImages.has(p.image)) {
+        seenImages.add(p.image);
+        list.push(p);
+        if (list.length === 14) break;
+      }
+    }
+  }
+  return list;
+})();
 
 /** A 3D ring of proof images: scroll spins it, dragging throws it. */
 export default function ProofOrbit() {

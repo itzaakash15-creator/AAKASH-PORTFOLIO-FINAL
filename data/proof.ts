@@ -90,12 +90,12 @@ export const proofData: Record<string, ProofItem> = {
       linkUrl: 'https://www.instagram.com/reel/DahRlLUSNZ0/'
     },
     'talentrix-reel': {
-      title: 'Talentrix — Sub-Brand Influencer Marketing Reel',
+      title: 'Talentrix — Sub-Brand Influencer Marketing Division',
       category: 'SUB-BRAND INITIATIVE',
       period: 'Digi Marketrix Influencer Division',
       type: 'image',
-      image: 'assets/proofs_optimized/salemrr_reel_2870.jpg',
-      desc: 'Commercial reel produced for Talentrix (@talentrix_), the specialized talent & influencer marketing division under Digi Marketrix, connecting brands with high-retention regional creators.',
+      image: 'assets/proofs_optimized/talentrix_proof.jpg',
+      desc: 'Commercial lead and founder for Talentrix (@talentrix_), the specialized talent & influencer marketing division under Digi Marketrix, connecting brands with high-retention regional creators.',
       linkText: 'View Reel on Instagram ↗',
       linkUrl: 'https://www.instagram.com/reel/DYhJlysI9Nr/'
     },

@@ -64,7 +64,6 @@ export default function Work() {
             >
               <div className={styles.media}>
                 <LiquidImage src={p.previewImg} alt={p.title} />
-                <span className={`mono ${styles.year}`}>{p.year}</span>
               </div>
               <div className={styles.info}>
                 <span className="mono muted">{p.num}</span>

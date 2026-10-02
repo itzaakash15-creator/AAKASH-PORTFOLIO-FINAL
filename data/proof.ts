@@ -232,12 +232,12 @@ export const proofData: Record<string, ProofItem> = {
       linkUrl: '#journey'
     },
     'mraku-joined': {
-      title: 'Mr Aku Vlogs — Account Creation & Early Origin (2020)',
+      title: 'Mr Aku Vlogs — Official Brand Identity & Channel Logo',
       category: 'CREATOR ARCHIVE',
-      period: 'Instagram Joined Record // September 2020',
+      period: 'Official Creator Identity // Mr Aku Vlogs',
       type: 'image',
-      image: 'assets/proofs_optimized/mr_aku_joined_proof.jpg',
-      desc: 'Official platform proof showing the account creation date in 2020. Verifies the authentic five-year foundation in digital video, audience growth, and content creation.',
+      image: 'assets/proofs_optimized/mr_aku_logo.png',
+      desc: 'Official illustrated visual brand identity and channel mascot for Mr Aku Vlogs, establishing the recognizable creator persona across YouTube and social platforms.',
       linkText: 'Visit @mr._aku_vlogs ↗',
       linkUrl: 'https://www.instagram.com/mr._aku_vlogs/'
     },

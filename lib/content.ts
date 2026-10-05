@@ -61,7 +61,7 @@ export const proofs: Proof[] = (() => {
 export type ProofGroup = {
   id: string;
   name: string;
-  tag: 'Clients' | 'Agency' | 'Creator' | 'Recognition' | 'Tech';
+  tag: 'Clients' | 'Agency' | 'Creator' | 'Recognition';
   items: Proof[];
 };
 
@@ -77,7 +77,6 @@ const GROUPS: { id: string; name: string; tag: ProofGroup['tag']; match: RegExp 
   { id: 'cinema', name: 'Cinema & Music', tag: 'Creator', match: /^mraku-(roshan|paranthu|tourist|nayanthara)/ },
   { id: 'mraku', name: 'Mr Aku Vlogs', tag: 'Creator', match: /^mraku-/ },
   { id: 'awards', name: 'Awards & Recognition', tag: 'Recognition', match: /^award-/ },
-  { id: 'tech', name: 'MineGuardian', tag: 'Tech', match: /^tech-mine/ },
 ];
 
 export const proofGroups: ProofGroup[] = (() => {

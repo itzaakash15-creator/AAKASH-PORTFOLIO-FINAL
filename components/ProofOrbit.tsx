@@ -21,7 +21,7 @@ const ORBIT_KEYS = [
   'award-talent-competition', // Recognition: Young Informative Content Award
   'digi-gimbal',              // Agency: On-Location Gimbal Field Production
   'mraku-tourist',            // Cinema: Movie Tourist Family Promotional Shoot
-  'tech-mineguardian',        // Tech: MineGuardian Autonomous Rover
+  'digi-cert',                // Credential: Certified Internship Completion
 ];
 
 const ITEMS: Proof[] = (() => {

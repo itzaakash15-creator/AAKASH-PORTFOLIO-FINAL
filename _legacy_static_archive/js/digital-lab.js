@@ -6,18 +6,6 @@
 
 export const labProjects = [
   {
-    id: 'mineguardian',
-    category: 'sih',
-    categoryLabel: 'SIH / HARDWARE',
-    title: 'MineGuardian / MineCore',
-    subtitle: 'Underground Mine Safety & Hazardous Gas Telemetry System',
-    description: 'Engineered for Smart India Hackathon: an integrated sensor network deploying multi-gas monitoring (CH4, CO, O2 deficiency), seismic telemetry, and environmental condition tracking with real-time alerting for underground miners.',
-    tech: ['ESP32', 'MQ-4 / MQ-7 Sensors', 'IoT Telemetry', 'Dashboard UI', 'Hardware Prototyping'],
-    status: 'SIH PROTOTYPE',
-    featured: true,
-    image: 'assets/lab_mineguardian.jpg'
-  },
-  {
     id: 'jayashakthi-lab',
     category: 'web',
     categoryLabel: 'WEB / ARCHITECTURE',

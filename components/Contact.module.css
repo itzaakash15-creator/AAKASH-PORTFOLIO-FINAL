@@ -12,6 +12,8 @@
   font-size: clamp(1rem, 1.6vw, 1.3rem); font-weight: 500; transition: background 0.4s, color 0.4s;
 }
 .pillBtn:hover { background: var(--accent-ink); color: var(--accent); }
+.whatsappBtn { display: inline-flex; align-items: center; gap: 0.6rem; }
+.waIcon { display: inline-block; flex-shrink: 0; }
 .copy { text-decoration: underline; text-underline-offset: 4px; margin-left: 1rem; }
 .bottom { margin-top: auto; padding-top: 5rem; display: flex; gap: 3rem; flex-wrap: wrap; }
 .bottom span { opacity: 0.55; display: block; margin-bottom: 0.4rem; }

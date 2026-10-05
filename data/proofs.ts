@@ -50,15 +50,6 @@ export const PROOFS_DATA: Record<string, ProofItem> = {
     src: '/assets/proofs_optimized/award_academic_excellence.jpg',
     description: 'Sustained top academic standing in AI architecture, software engineering, and machine learning systems.',
   },
-  'lab-mineguardian': {
-    key: 'lab-mineguardian',
-    title: 'MineGuardian AI Research Lab & Computer Vision System',
-    category: 'Engineering',
-    date: '2024',
-    issuer: 'Applied AI Laboratory',
-    src: '/assets/lab_mineguardian.jpg',
-    description: 'Deep learning system for industrial safety monitoring, edge detection, and real-time hazard classification.',
-  },
   'client-jaya': {
     key: 'client-jaya',
     title: 'Jaya Shakthi Agencies Commercial Catalog & Brand Production',

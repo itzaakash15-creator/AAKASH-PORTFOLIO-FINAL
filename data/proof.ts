@@ -321,16 +321,6 @@ export const proofData: Record<string, ProofItem> = {
       desc: 'High-impact promotional campaign video for regional retail store, featuring product demonstrations, offer announcements, and store walk-throughs.',
       linkText: 'Visit @mr._aku_vlogs ↗',
       linkUrl: 'https://www.instagram.com/mr._aku_vlogs/'
-    },
-    'tech-mineguardian': {
-      title: 'MineGuardian / MineCore — Autonomous Underground Rover',
-      category: 'AI & HARDWARE TELEMETRY',
-      period: 'Smart India Hackathon // IoT & Sensor Fusion',
-      type: 'image',
-      image: 'assets/lab_mineguardian.jpg',
-      desc: 'Hazardous underground coal mine rover concept designed to monitor toxic methane (MQ-4), temperature (DHT22), and structural cave-in vibrations. Transmits real-time environmental telemetry to an emergency dashboard before miners enter hazardous shafts.',
-      linkText: 'Explore Digital Lab ↗',
-      linkUrl: 'lab.html#mineguardian'
     }
   };
 

@@ -9,6 +9,7 @@ export const SOCIALS_DATA: SocialLink[] = [
   { label: 'Instagram', url: 'https://www.instagram.com/itzaakash_15?igsh=MWF5ODJ2dWR3ZzVpdA==' },
   { label: 'YouTube', url: 'https://youtube.com/@MrAkuVlogs' },
   { label: 'GitHub', url: 'https://github.com/itzaakash15-creator' },
+  { label: 'WhatsApp', url: 'https://wa.me/918590637715' },
   { label: 'Email', url: 'mailto:itzaakash15@gmail.com' },
 ];
 
@@ -16,6 +17,7 @@ export const contactDetails = {
   email: 'itzaakash15@gmail.com',
   phone: '+91 85906 37715',
   phoneClean: '+918590637715',
+  whatsappUrl: 'https://wa.me/918590637715',
   location: 'Tamil Nadu, India · Available Worldwide',
   status: 'Available for Select Brand & Web Projects',
 };

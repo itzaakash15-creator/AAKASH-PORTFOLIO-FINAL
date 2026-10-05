@@ -8,7 +8,7 @@ import { RevealText } from './Reveal';
 import { useOpenProof } from './ProofContext';
 import styles from './ProofIndex.module.css';
 
-const FILTERS = ['All', 'Clients', 'Agency', 'Creator', 'Recognition', 'Tech'] as const;
+const FILTERS = ['All', 'Clients', 'Agency', 'Creator', 'Recognition'] as const;
 type Filter = (typeof FILTERS)[number];
 const cover = (g: ProofGroup) => g.items[0].image ?? g.items[0].poster;
 

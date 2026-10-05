@@ -123,10 +123,9 @@ export const modalData = {
       { label: 'FIELD', value: 'AI & Data Science (B.Tech)' },
       { label: 'HACKATHON', value: 'Smart India Hackathon' }
     ],
-    image: 'assets/lab_mineguardian.jpg',
-    overview: 'Technical engineering initiatives spanning Smart India Hackathon prototypes, IoT telemetry hubs, environmental safety sensors, and foundational machine learning experiments.',
+    image: 'assets/project_jayashakthi.jpg',
+    overview: 'Technical engineering initiatives spanning IoT telemetry hubs, environmental safety sensors, and foundational machine learning experiments.',
     role: [
-      'MineGuardian / MineCore: Underground mine telemetry & hazardous gas alerting system for SIH',
       'ESP32 Fire & Thermal Telemetry Hub with remote MQTT dashboard alerts',
       'GrandCare: Accelerometer-based elderly fall detection and health monitoring concept',
       'PowerSense: Non-invasive CT energy consumption profiling prototype',

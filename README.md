@@ -33,10 +33,10 @@ Portfolio/
 ├── resume.html                # Executive Printable Digital Resume (Cmd+P print-to-PDF ready, clean typography)
 ├── work.html                  # 7 In-Depth Case Studies (U6NICK, Digi Marketrix, Jayashakthi, Chinnadurai, SalemRR, Life With Aakash, Vedha Rice)
 ├── experience.html            # Digi Marketrix Agency Internship & Selected Freelance Track Record
-├── lab.html                   # Digital Lab: Web, AI/Data (MineGuardian), Hardware (ESP32), SolidWorks, SIH
+├── lab.html                   # Digital Lab: Web, Hardware (ESP32), SolidWorks
 ├── journey.html               # Evolutionary Timeline (2020 Content Creation → 2023 Social → 2025 Marketing → 2026 AI → NOW Building)
 ├── about.html                 # Human Editorial About: Identity, Practice, Curiosity, Horizon, Education, Awards
-├── contact.html               # Minimal Contact Page: Direct Channels (Email, Phone, LinkedIn, IG, GitHub) & Project Form
+├── contact.html               # Minimal Contact Page: Direct Channels (Email, Phone, WhatsApp, LinkedIn, IG, GitHub) & Project Form
 ├── README.md                  # Master System Documentation
 ├── css/
 │   ├── main.css               # Design tokens, Inter + Playfair Display typography, #0A0A0C / #F5F2EB / Champagne Gold palette
@@ -55,8 +55,7 @@ Portfolio/
     ├── project_jayashakthi.jpg  # Web portal UI showcase
     ├── project_textile.jpg      # Chinnadurai Textiles
     ├── project_food.jpg         # SalemRR Biriyani
-    ├── project_vedha_rice.jpg   # Vedha Rice packaging & branding
-    └── lab_mineguardian.jpg     # MineGuardian SIH IoT telemetry
+    └── project_vedha_rice.jpg   # Vedha Rice packaging & branding
 ```
 
 ---
@@ -72,6 +71,7 @@ Then open [http://localhost:4173](http://localhost:4173) in your browser.
 ## 📬 Connect with Aakash K
 - **Email:** [itzaakash15@gmail.com](mailto:itzaakash15@gmail.com)
 - **Phone:** [+91 8590637715](tel:8590637715)
+- **WhatsApp:** [+91 8590637715](https://wa.me/918590637715)
 - **LinkedIn:** [Aakash K](https://www.linkedin.com/in/aakash-k-028a2b389/)
 - **Instagram:** [@life.with_aakash](https://www.instagram.com/life.with_aakash/)
 - **GitHub:** [itzaakash15-creator](https://github.com/itzaakash15-creator)

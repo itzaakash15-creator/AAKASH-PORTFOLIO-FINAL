@@ -48,8 +48,8 @@ export const journeyData = [
     title: 'AI & DATA SCIENCE',
     headline: 'Technical Rigor & Machine Intelligence',
     workingOn: 'Commenced B.Tech in Artificial Intelligence & Data Science at Rathinam Technical Campus. Exploring predictive data models, IoT telemetry, and technical web architectures.',
-    skills: ['Python', 'Data Analytics', 'Web Development', 'IoT Telemetry (ESP32)', 'Smart India Hackathon (MineGuardian)'],
-    relevantWork: 'Jayashakthi Tours & Travels web platform, MineGuardian mine safety telemetry dashboard, ESP32 prototypes.'
+    skills: ['Python', 'Data Analytics', 'Web Development', 'IoT Telemetry (ESP32)'],
+    relevantWork: 'Jayashakthi Tours & Travels web platform, ESP32 environmental prototypes.'
   },
   {
     year: 'NEXT',

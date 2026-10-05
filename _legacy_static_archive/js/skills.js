@@ -88,7 +88,7 @@ export const skillsMapping = {
   },
   'IoT': {
     category: 'TECH',
-    projects: ['MineGuardian Telemetry (SIH)', 'ESP32 Fire & Environmental System'],
+    projects: ['ESP32 Fire & Environmental System'],
     summary: 'Microcontroller hardware networks, sensor telemetry, and cloud data transmission.'
   },
   'Hardware Prototyping': {

@@ -6,11 +6,11 @@ import Magnetic from './Magnetic';
 import styles from './Manifesto.module.css';
 
 const TEXT =
-  "I don't fit into one box. Three years inside an agency taught me that strategy, story and craft are the same job — so I do all three: campaigns that convert, brands people trust, films that hold attention, and talks that move rooms.";
+  "I don't fit into one box. Hands-on agency experience taught me that strategy, story and craft are the same job — so I do all three: campaigns that convert, brands people trust, films that hold attention, and stories that inspire people.";
 
 function Word({ word, range, progress }: { word: string; range: [number, number]; progress: MotionValue<number> }) {
   const opacity = useTransform(progress, range, [0.12, 1]);
-  const accent = /box\.|trust,|attention,|rooms\./.test(word);
+  const accent = /box\.|trust,|attention,|people\./.test(word);
   return (
     <span className={styles.word}>
       <motion.span style={{ opacity }} className={accent ? 'serif accent' : undefined}>
@@ -35,8 +35,8 @@ export default function Manifesto() {
       </p>
       <div className={styles.row}>
         <p className="muted">
-          Digital marketing strategist & creative lead at Digi Marketrix, founder of the Talentrix
-          creator initiative, and the voice behind Life With Aakash.
+          Digital marketing & creative intern at Digi Marketrix, creator behind Life With Aakash, and
+          digital builder focused on authentic storytelling and personal branding.
         </p>
         <Magnetic strength={0.4}>
           <a href="#contact" className={styles.cta} data-cursor="Say hi">

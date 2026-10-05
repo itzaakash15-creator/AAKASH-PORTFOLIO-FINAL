@@ -37,49 +37,49 @@ export interface ExperienceChapter {
 export const DIGI_MARKETRIX_DATA: ExperienceChapter = {
   id: 'work',
   number: '01',
-  kicker: '01 // THE PRIMARY FOUNDATION',
+  kicker: '01 // AGENCY INTERNSHIP',
   headline: {
-    line1: 'THREE YEARS.',
-    highlight: 'ONE PLACE THAT',
-    line2: 'CHANGED HOW I WORK.',
+    line1: 'HANDS-ON.',
+    highlight: 'WHERE THEORY BECAME',
+    line2: 'DAILY AGENCY EXECUTION.',
   },
   title: 'DIGI MARKETRIX',
   tagline: 'MARKETING THE DIGITAL PRESENCE',
   overview:
-    'Digi Marketrix is where digital marketing stopped being theory and became daily execution. Over nearly three years, I contributed across creative direction, digital strategy, brand positioning, client execution, and in-house venture building.',
-  duration: '2022 — Present (3+ Years)',
-  role: 'Digital Marketing Strategist & Creative Lead',
-  scope: 'Digital Marketing · Social Strategy · Brand Identity · Influencer Media',
+    'Digi Marketrix is where digital marketing stopped being theory and became daily execution. During a full-time internship, I worked across content research, scripting, videography, client shoots, video editing, personal branding, and social media content on real client projects.',
+  duration: 'May 2026 — July 2026',
+  role: 'Digital Marketing & Creative Intern',
+  scope: 'Digital Marketing · Content Research · Videography · Video Editing · Personal Branding',
   stats: [
-    { label: 'Agency Exposure', value: '3+ Years' },
-    { label: 'Brands Serviced', value: '15+' },
-    { label: 'Campaigns Delivered', value: '50+' },
-    { label: 'Talentrix Pipeline', value: 'Active' },
+    { label: 'Client Shoots & Campaigns', value: 'REAL' },
+    { label: 'Commercial Deliverables', value: 'PUBLISHED' },
+    { label: 'Executive Positioning', value: 'BRANDING' },
+    { label: 'Content Strategy & Media', value: 'DIGITAL' },
   ],
   pillars: [
     {
-      title: 'AGENCY FOUNDATION',
+      title: 'AGENCY WORKFLOW',
       description:
-        'Managing comprehensive marketing funnels from creative ideation to cross-platform digital distribution, tracking performance and driving tangible business conversions.',
-      deliverables: ['Social Strategy', 'Paid Media Campaigns', 'Performance Analytics', 'Client Management'],
+        'Executing commercial marketing workflows from content research and client shoots to cross-platform digital distribution and social media publishing.',
+      deliverables: ['Content Research', 'Client Shoots', 'Social Media Content', 'Content Planning'],
     },
     {
-      title: 'CREATIVE DIRECTION',
+      title: 'CREATIVE PRODUCTION',
       description:
-        'Overseeing end-to-end visual systems, video production, graphic design, and brand storytelling that captivates audiences and strengthens corporate identities.',
-      deliverables: ['Campaign Filmmaking', 'Visual Identity Systems', 'Editorial Copywriting', 'Art Direction'],
+        'Hands-on video production, camera operation, on-location client shoots, and post-production timeline editing to deliver high-retention commercial reels.',
+      deliverables: ['Scriptwriting', 'Videography', 'Video Editing', 'Personal Branding'],
     },
   ],
   talentrix: {
-    kicker: 'IN-HOUSE VENTURE // DIVISION',
+    kicker: 'CONCEPT // EXPLORATION',
     title: 'TALENTRIX',
-    badge: 'INFLUENCER MEDIA VENTURE',
+    badge: 'INITIATIVE IN DEVELOPMENT',
     description:
-      'An internal influencer marketing and creator talent initiative born inside Digi Marketrix to bridge the gap between regional brands and creator audiences with precision storytelling.',
+      'An internal influencer marketing and creator talent concept in development, explored during the Digi Marketrix internship to evaluate creator partnerships for regional brands.',
     stats: [
-      { label: 'Venture Status', value: 'Active Initiative' },
-      { label: 'Creator Network', value: 'Regional & National' },
-      { label: 'Campaign ROI', value: 'Performance-Driven' },
+      { label: 'Initiative Status', value: 'In Development' },
+      { label: 'Strategic Focus', value: 'Creator Network' },
+      { label: 'Target Market', value: 'Regional' },
     ],
   },
 };

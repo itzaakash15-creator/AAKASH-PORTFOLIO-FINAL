@@ -11,7 +11,7 @@ function Counter({ value }: { value: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true });
   const match = value.match(/^(\d+)(.*)$/);
-  const [n, setN] = useState(0);
+  const [n, setN] = useState(() => (match ? Number(match[1]) : 0));
 
   useEffect(() => {
     if (!inView || !match) return;

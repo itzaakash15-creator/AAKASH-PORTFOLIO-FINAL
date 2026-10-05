@@ -69,14 +69,14 @@ const GROUPS: { id: string; name: string; tag: ProofGroup['tag']; match: RegExp 
   { id: 'digi', name: 'Digi Marketrix', tag: 'Agency', match: /^digi-/ },
   { id: 'talentrix', name: 'Talentrix', tag: 'Agency', match: /^talentrix/ },
   { id: 'jaya', name: 'Jayashakthi Tours', tag: 'Clients', match: /jayashakthi/ },
-  { id: 'purple', name: 'Purple Collection', tag: 'Clients', match: /^purple-|^personal-branding/ },
+  { id: 'u6nick', name: 'U6NICK', tag: 'Clients', match: /^u6nick-|^purple-|^personal-branding/ },
   { id: 'salemrr', name: 'Salem RR Biriyani', tag: 'Clients', match: /^salemrr/ },
   { id: 'chinnadurai', name: 'Chinnadurai Textiles', tag: 'Clients', match: /^chinnadurai/ },
   { id: 'vedha', name: 'Vedha Rice', tag: 'Clients', match: /^vedha/ },
   { id: 'lwa', name: 'Life With Aakash', tag: 'Creator', match: /^lwa-/ },
   { id: 'cinema', name: 'Cinema & Music', tag: 'Creator', match: /^mraku-(roshan|paranthu|tourist|nayanthara)/ },
   { id: 'mraku', name: 'Mr Aku Vlogs', tag: 'Creator', match: /^mraku-/ },
-  { id: 'awards', name: 'Awards & Stage', tag: 'Recognition', match: /^award-/ },
+  { id: 'awards', name: 'Awards & Recognition', tag: 'Recognition', match: /^award-/ },
   { id: 'tech', name: 'MineGuardian', tag: 'Tech', match: /^tech-mine/ },
 ];
 

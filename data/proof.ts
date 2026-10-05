@@ -90,43 +90,43 @@ export const proofData: Record<string, ProofItem> = {
       linkUrl: 'https://www.instagram.com/reel/DahRlLUSNZ0/'
     },
     'talentrix-reel': {
-      title: 'Talentrix — Sub-Brand Influencer Marketing Division',
-      category: 'SUB-BRAND INITIATIVE',
-      period: 'Digi Marketrix Influencer Division',
+      title: 'Talentrix — Creator Initiative (In Development)',
+      category: 'CONCEPT // EXPLORATION',
+      period: 'Initiative in Development // Creator Division',
       type: 'image',
       image: 'assets/proofs_optimized/talentrix_proof.jpg',
-      desc: 'Commercial lead and founder for Talentrix (@talentrix_), the specialized talent & influencer marketing division under Digi Marketrix, connecting brands with high-retention regional creators.',
+      desc: 'Internal influencer marketing and creator talent concept in development, exploring strategic connections between regional brands and creator audiences.',
       linkText: 'View Reel on Instagram ↗',
       linkUrl: 'https://www.instagram.com/reel/DYhJlysI9Nr/'
     },
     'purple-bts': {
-      title: 'Purple Collection — Personal Branding Shoot BTS',
+      title: 'U6NICK — Editorial Model Personal Branding Shoot BTS',
       category: 'PERSONAL BRANDING',
-      period: 'Client Production // Fashion & Retail',
+      period: 'Editorial Model Personal Branding // 2026',
       type: 'image',
       image: 'assets/proofs_optimized/purple_collection_bts_large.jpg',
-      desc: 'On-location personal branding direction and video capture for Purple Collection. Establishing premium editorial tone, camera framing, and scripted talking points.',
-      linkText: 'Visit Client Instagram ↗',
+      desc: 'On-location personal branding direction, camera framing, and video capture for editorial model U6NICK, establishing a refined visual presence and content positioning.',
+      linkText: 'Visit Client Profile ↗',
       linkUrl: 'https://www.instagram.com/mr._aku_vlogs/'
     },
     'purple-video': {
-      title: 'Purple Collection — Complete Client Campaign Video',
+      title: 'U6NICK — Personal Branding Campaign Film',
       category: 'CLIENT VIDEO',
-      period: 'Direction, Filming & Editing by Aakash',
+      period: 'Videography & Editing // Editorial Model',
       type: 'video',
       video: 'assets/proofs_optimized/personal_branding_video.mp4',
       poster: 'assets/proofs_optimized/poster_personal_branding_video.jpg',
-      desc: 'Full promotional video conceived, filmed, and edited for Purple Collection. Employs rhythmic pacing, music synchronization, and compelling visual hooks.',
-      linkText: 'Visit Client Instagram ↗',
+      desc: 'Personal branding video conceived, filmed, and edited for editorial model U6NICK, focusing on digital identity, aesthetic pacing, and social media positioning.',
+      linkText: 'Visit Client Profile ↗',
       linkUrl: 'https://www.instagram.com/mr._aku_vlogs/'
     },
     'purple-growth': {
-      title: 'Purple Collection — Verified +3,000 Reach Growth',
+      title: 'U6NICK — Profile Built to ~3K Followers',
       category: 'ANALYTICS & RESULTS',
-      period: 'Meta Business Suite Analytics Screenshot',
+      period: 'Meta Business Suite // Verified Analytics',
       type: 'image',
       image: 'assets/proofs_optimized/purple_collection_growth_3000.jpg',
-      desc: 'Verified platform metrics showing a 3,000+ follower and impression increase following the targeted personal branding content release for the client.',
+      desc: 'Verified platform metrics showing account growth reaching approximately 3,000 followers following targeted editorial personal branding content, reels, and profile optimization.',
       linkText: 'Visit Client Profile ↗',
       linkUrl: 'https://www.instagram.com/mr._aku_vlogs/'
     },
@@ -141,52 +141,52 @@ export const proofData: Record<string, ProofItem> = {
       linkUrl: 'https://www.jayashakthitoursandtravels.com/'
     },
     'chinnadurai-scripting': {
-      title: 'Chinnadurai Textiles — Commercial Scripting Document',
+      title: 'Chinnadurai Textiles — Content Strategy & Script',
       category: 'SCRIPTING & STRATEGY',
-      period: 'Pre-Production Concept & Script',
+      period: 'Content Strategy & Scriptwriting // 2026',
       type: 'image',
       image: 'assets/proofs_optimized/chinnadurai_scripting.jpg',
-      desc: 'Pre-production concept and script notes for retail commercial content. Outlined visual hooks, sequence transitions, and promotional call-to-actions.',
+      desc: 'Pre-production content strategy, hook formulation, and script notes for executive personal branding content.',
       linkText: 'Explore Selected Work ↗',
-      linkUrl: '#other-work'
+      linkUrl: '#work'
     },
     'chinnadurai-retention': {
-      title: 'Chinnadurai Textiles — Audience Retention Analytics',
+      title: 'Chinnadurai Textiles — Audience Retention Analytics (~10K–15K Views)',
       category: 'RETENTION ANALYTICS',
-      period: '10K–15K Organic Views // Non-Paid',
+      period: '~10K–15K Organic Views // Non-Paid',
       type: 'image',
       image: 'assets/proofs_optimized/chinnadurai_retention.jpg',
-      desc: 'Analytics graph demonstrating sustained organic viewership and high watch time for Chinnadurai Textiles video campaigns, generated without paid ad spend.',
+      desc: 'Analytics graph demonstrating ~10K–15K organic views and sustained watch time generated through targeted scriptwriting and content structure without paid ad spend.',
       linkText: 'Explore Selected Work ↗',
-      linkUrl: '#other-work'
+      linkUrl: '#work'
     },
     'vedha-rice': {
       title: 'Vedha Rice — Commercial VJ Reel Frame',
       category: 'BRAND PROMOTION',
-      period: 'Commercial VJ & Scripting // FMCG',
+      period: 'Commercial VJ & Scripting // 2026',
       type: 'image',
       image: 'assets/proofs_optimized/vedha_rice_vj.jpg',
       desc: 'On-screen commercial presentation for Vedha Rice, delivering clear brand value, quality differentiation, and engaging regional consumer connection.',
       linkText: 'Explore Selected Work ↗',
-      linkUrl: '#other-work'
+      linkUrl: '#work'
     },
     'lwa-views': {
       title: 'Life With Aakash — 59K Peak Viewership Analytics',
       category: 'ORGANIC METRICS',
-      period: '59.1K Impressions // Organic Audience Retention',
+      period: '59K Views // High Retention Reel',
       type: 'image',
       image: 'assets/proofs_optimized/lwa_organic_views.jpg',
-      desc: 'Verified platform insights displaying 59.1K organic views on Life With Aakash motivational reel, proving hook retention and viral distribution mechanics.',
+      desc: 'Verified platform insights displaying 59K organic views on Life With Aakash motivational reel, demonstrating retention and viral distribution mechanics.',
       linkText: 'Visit @life.with_aakash ↗',
       linkUrl: 'https://www.instagram.com/life.with_aakash?stkn=MXcwa2ZraGllYXBuOA=='
     },
     'lwa-profile': {
-      title: 'Life With Aakash — Official Instagram Profile',
+      title: 'Life With Aakash — Personal Brand & Motivational Content',
       category: 'CREATOR PLATFORM',
-      period: '@life.with_aakash // Motivational Content',
+      period: '453 Followers // 17 Reels Published',
       type: 'image',
       image: 'assets/proofs_optimized/lwa_page.jpg',
-      desc: 'Dedicated personal growth and motivational communication platform. Features original reflections, spoken-word perspectives, and life mindset lessons.',
+      desc: 'Personal brand focused on motivation, life lessons, personal growth, storytelling, and self-reflection.',
       linkText: 'Visit @life.with_aakash ↗',
       linkUrl: 'https://www.instagram.com/life.with_aakash?stkn=MXcwa2ZraGllYXBuOA=='
     },
@@ -201,33 +201,33 @@ export const proofData: Record<string, ProofItem> = {
       linkUrl: 'https://www.instagram.com/life.with_aakash?stkn=MXcwa2ZraGllYXBuOA=='
     },
     'award-business-excellence': {
-      title: 'Twin Heart Business Excellence Award',
+      title: 'Best Reels Creator Award — 2025',
       category: 'VERIFIED RECOGNITION',
-      period: 'Stage Presentation // Excellence Trophy & Certificate',
+      period: 'Stage Award Presentation // 2025',
       type: 'image',
       image: 'assets/proofs_optimized/award_1_business_excellence.jpg',
-      desc: 'Prestigious Twin Heart Business Excellence Award presented on stage for outstanding contribution in digital marketing, brand promotion, and creative execution.',
+      desc: 'Best Reels Creator Award presented on stage, recognizing creative short-form video pacing, narrative structure, and creator execution.',
       linkText: 'Explore Journey Timeline ↗',
       linkUrl: '#journey'
     },
     'award-talent-competition': {
-      title: 'State Level Talent Competition 2025 Award',
-      category: 'STAGE HONORS',
-      period: '2025 // State Level Recognition',
+      title: 'Young Informative Content Award — 2025',
+      category: 'VERIFIED RECOGNITION',
+      period: 'State Level Talent Competition // 2025',
       type: 'image',
       image: 'assets/proofs_optimized/award_2_talent_competition.jpg',
-      desc: 'State-level recognition honoring creative communication, visual storytelling, and digital content impact at the 2025 talent competition.',
+      desc: 'Young Informative Content Award honoring informative visual storytelling and creative digital communication at the 2025 talent competition.',
       linkText: 'Explore Journey Timeline ↗',
       linkUrl: '#journey'
     },
     'award-talent-video': {
-      title: 'State Level Talent Competition 2025 — Stage Ceremony Video',
+      title: 'Stage Recognition Ceremony Video — 2025',
       category: 'STAGE CEREMONY',
-      period: 'Live On-Stage Award Presentation',
+      period: 'Live On-Stage Award Presentation // 2025',
       type: 'video',
       video: 'assets/proofs_optimized/award_2_video.mov',
       poster: 'assets/proofs_optimized/poster_award2_video.jpg',
-      desc: 'Live stage recording capturing the announcement and presentation of the 2025 State Level Talent Competition award.',
+      desc: 'Live stage recording capturing the announcement and presentation of the 2025 creator award.',
       linkText: 'Explore Journey Timeline ↗',
       linkUrl: '#journey'
     },
@@ -242,12 +242,12 @@ export const proofData: Record<string, ProofItem> = {
       linkUrl: 'https://www.instagram.com/mr._aku_vlogs/'
     },
     'mraku-profile': {
-      title: 'Mr Aku Vlogs — Verified Creator Profile (2,177+ Followers)',
+      title: 'Mr Aku Vlogs — Verified Creator Profile (2,177 Followers)',
       category: 'CREATOR ARCHIVE',
-      period: '2,177+ Verified Followers // 332 Posts',
+      period: '2,177 Followers // Instagram Started 2023',
       type: 'image',
       image: 'assets/proofs_optimized/mr_aku_instagram_page.jpg',
-      desc: 'Primary creator channel demonstrating consistent multi-year publishing, regional food reviews, local brand promotions, and creator collaborations.',
+      desc: 'Creator foundation spanning YouTube (started 2020) and Instagram (started 2023), demonstrating consistent publishing, regional food reviews, local brand promotions, and creator collaborations.',
       linkText: 'Visit @mr._aku_vlogs ↗',
       linkUrl: 'https://www.instagram.com/mr._aku_vlogs/'
     },

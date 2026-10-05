@@ -7,50 +7,56 @@ export interface JourneyStep {
 
 export const progressionSteps: string[] = [
   'CREATE',
-  'EDIT',
-  'SHOOT',
-  'PROMOTE',
-  'MARKET',
+  'EXPAND',
+  'RECOGNIZE',
+  'INTERN',
+  'BRAND',
   'BUILD',
-  'LEAD.',
+  'VISION.',
 ];
 
 export const journeyMilestones: JourneyStep[] = [
   {
     year: '2020 // ORIGIN',
-    title: 'CREATE',
-    desc: 'Started during school lockdown. Built the first YouTube channel and launched Mr Aku Vlogs, mastering raw storytelling and initial video recording.',
+    title: 'CONTENT CREATION',
+    desc: 'Started content creation through Mr Aku Vlogs on YouTube, mastering initial video recording, local exploration, and raw visual storytelling.',
     proofKey: 'mraku-joined',
   },
   {
-    year: '2021–2022 // CRAFT',
-    title: 'EDIT & SHOOT',
-    desc: 'Transitioned from phone cuts to professional Adobe Premiere Pro timeline editing, audio soundscapes, and hands-on 3-axis camera stabilization.',
-    proofKey: 'digi-working',
-  },
-  {
-    year: '2023 // REACH',
-    title: 'PROMOTE',
-    desc: 'Expanded into regional shop promotions, street mic interviews, and promotional media collaborations for Tamil feature films.',
+    year: '2023 // CREATOR GROWTH',
+    title: 'EXPANDED PRESENCE',
+    desc: 'Expanded creator presence through Instagram (@mr._aku_vlogs), conducting on-camera street interviews and promotional media collaborations for regional cinema.',
     proofKey: 'mraku-paranthu',
   },
   {
-    year: '2024 // AGENCY',
-    title: 'MARKET',
-    desc: 'Associated with Digi Marketrix. Immersed in full commercial agency operations, client account strategy, and structured campaigns.',
-    proofKey: 'digi-office',
+    year: '2025 // RECOGNITION',
+    title: 'VERIFIED AWARDS',
+    desc: 'Honored with the Best Reels Creator Award and Young Informative Content Award for creative pacing, narrative structure, and high-impact digital storytelling.',
+    proofKey: 'award-business-excellence',
   },
   {
-    year: '2025 // SOFTWARE',
-    title: 'BUILD',
-    desc: 'Authored full-stack production websites including Jayashakthi Tours & Travels, fusing high-performance front-end code with brand direction.',
+    year: 'MAY — JULY 2026 // AGENCY',
+    title: 'DIGI MARKETRIX INTERNSHIP',
+    desc: 'Completed full-time agency internship at Digi Marketrix, working across content research, scripting, videography, client shoots, video editing, and social media content.',
+    proofKey: 'digi-cert',
+  },
+  {
+    year: '2026 // PERSONAL BRANDING',
+    title: 'U6NICK & CLIENT PROJECTS',
+    desc: 'Directed personal branding and digital content work for editorial model U6NICK (building the profile to ~3K followers) alongside independent commercial client campaigns.',
+    proofKey: 'purple-bts',
+  },
+  {
+    year: '2026 — PRESENT // ACADEMICS',
+    title: 'AI & DATA SCIENCE',
+    desc: 'Pursuing B.Tech in Artificial Intelligence & Data Science at Rathinam Technical Campus, engineering web platforms like Jayashakthi Tours and IoT hardware systems.',
     proofKey: 'jayashakthi-site',
   },
   {
-    year: '2026 // LEADERSHIP',
-    title: 'LEAD',
-    desc: 'Spearheading Talentrix, earning stage business awards, and architecting high-retention personal branding frameworks for executives.',
-    proofKey: 'award-business-excellence',
+    year: 'NOW & NEXT // HORIZON',
+    title: 'AGENCY & AI SYSTEMS',
+    desc: 'Building across digital marketing, personal branding, web, and technology, with long-term direction toward agency ambitions and AI-assisted marketing systems.',
+    proofKey: 'digi-working',
   },
 ];
 

@@ -10,15 +10,15 @@ import styles from './ProofOrbit.module.css';
 const ORBIT_KEYS = [
   'digi-office',              // Agency: Studio Logo Wall
   'salemrr-food',             // Client: Salem RR Biriyani Food Reel
-  'award-business-excellence', // Recognition: Twin Heart Business Award
+  'award-business-excellence', // Recognition: Best Reels Creator Award
   'jayashakthi-site',         // Client: Jayashakthi Tours Web Engineering
   'mraku-roshan',             // Cinema: Music Album with Actor Roshan
-  'purple-bts',               // Client: Purple Collection Personal Branding
+  'purple-bts',               // Client: U6NICK Personal Branding
   'digi-working',             // Agency: Premiere Pro Timeline Workflow
   'vedha-rice',               // Client: Vedha Rice Commercial VJ
   'lwa-views',                // Creator: Life With Aakash 59K Viral Insights
   'chinnadurai-scripting',    // Client: Chinnadurai Textiles Campaign Script
-  'award-talent-competition', // Recognition: State Level Talent Award
+  'award-talent-competition', // Recognition: Young Informative Content Award
   'digi-gimbal',              // Agency: On-Location Gimbal Field Production
   'mraku-tourist',            // Cinema: Movie Tourist Family Promotional Shoot
   'tech-mineguardian',        // Tech: MineGuardian Autonomous Rover

@@ -17,8 +17,8 @@ export const HERO_ANCHORS_DATA: HeroAnchor[] = [
   {
     index: '02',
     preview: '/assets/proofs_optimized/purple_collection_bts.jpg',
-    title: 'PERSONAL BRANDING STRATEGIST',
-    sub: 'Brand Building',
+    title: 'U6NICK PERSONAL BRANDING',
+    sub: 'Editorial Model Brand Building',
     kicker: 'STRATEGY / 02',
   },
   {
